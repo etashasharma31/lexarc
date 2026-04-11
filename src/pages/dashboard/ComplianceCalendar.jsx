@@ -76,8 +76,8 @@ const ComplianceCalendar = () => {
                                     {events.map((ev, i) => (
                                         <div key={i} className="relative group cursor-pointer">
                                             {/* Status Node */}
-                                            <div className={`absolute -left-[40px] top-0 w-[24px] h-[24px] rounded-sm flex items-center justify-center text-white shadow-clinical ring-4 ring-white z-10 transition-transform group-hover:scale-110 ${
-                                                ev.color === 'error' ? 'bg-error' : ev.color === 'primary' ? 'bg-primary' : 'bg-secondary'
+                                            <div className={`absolute -left-[40px] top-0 w-[24px] h-[24px] rounded-sm flex items-center justify-center bg-transparent border-2 shadow-clinical ring-4 ring-white z-10 transition-transform group-hover:scale-110 ${
+                                                ev.color === 'error' ? 'border-error text-error' : ev.color === 'primary' ? 'border-primary text-primary' : 'border-secondary text-secondary'
                                             }`}>
                                                 <Icon name={ev.color === 'error' ? 'priority_high' : 'event'} size={14} />
                                             </div>

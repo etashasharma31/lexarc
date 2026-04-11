@@ -88,7 +88,7 @@ const DocumentUploadProtocol = () => {
                             
                             {uploadStatus === 'IDLE' && (
                                 <div className="space-y-8 animate-in zoom-in-95 duration-500">
-                                    <div className="w-24 h-24 bg-primary/[0.03] text-primary rounded-2xl flex items-center justify-center mx-auto shadow-clinical group-hover:scale-110 transition-transform duration-700">
+                                    <div className="w-24 h-24 bg-transparent border-2 border-primary/20 text-primary rounded-2xl flex items-center justify-center mx-auto shadow-clinical group-hover:scale-110 transition-transform duration-700">
                                         <Icon name="cloud_upload" size={48} className="animate-bounce-slow" />
                                     </div>
                                     <div className="space-y-2">
@@ -126,7 +126,7 @@ const DocumentUploadProtocol = () => {
 
                             {uploadStatus === 'COMPLETE' && (
                                 <div className="space-y-8 animate-in zoom-in-95 duration-700">
-                                    <div className="w-24 h-24 bg-secondary text-white rounded-2xl flex items-center justify-center mx-auto shadow-clinical shadow-secondary/20">
+                                    <div className="w-24 h-24 bg-transparent border-2 border-secondary text-secondary rounded-2xl flex items-center justify-center mx-auto shadow-clinical shadow-secondary/10">
                                         <Icon name="check_circle" size={48} />
                                     </div>
                                     <div className="space-y-2">

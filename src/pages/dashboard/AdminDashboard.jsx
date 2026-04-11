@@ -107,7 +107,7 @@ const AdminDashboard = () => {
                             <div className="bg-white p-10 shadow-clinical border border-clinical rounded-sm">
                                 <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/30 mb-8">PRIMARY PRACTICE</h3>
                                 <div className="flex gap-6 items-center">
-                                    <div className="w-14 h-14 bg-primary/[0.03] border border-clinical shadow-clinical flex items-center justify-center text-primary">
+                                    <div className="w-14 h-14 bg-transparent border border-clinical shadow-clinical flex items-center justify-center text-primary">
                                         <Icon name="corporate_fare" size={28} />
                                     </div>
                                     <div>
@@ -141,7 +141,7 @@ const AdminDashboard = () => {
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">142 Cases</td>
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">14.2 Days</td>
                                         <td className="px-8 py-6 text-right">
-                                            <span className="px-3 py-1 bg-secondary/10 text-secondary text-[9px] font-bold uppercase tracking-widest rounded-sm border border-secondary/20 shadow-clinical">OPTIMAL</span>
+                                            <span className="px-3 py-1 bg-transparent text-secondary text-[9px] font-bold uppercase tracking-widest rounded-sm border border-secondary/30 shadow-clinical">OPTIMAL</span>
                                         </td>
                                     </tr>
                                     <tr className="hover:bg-primary/[0.01] transition-all cursor-pointer group">
@@ -149,7 +149,7 @@ const AdminDashboard = () => {
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">89 Cases</td>
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">45.0 Days</td>
                                         <td className="px-8 py-6 text-right">
-                                            <span className="px-3 py-1 bg-primary/[0.05] text-primary/40 text-[9px] font-bold uppercase tracking-widest rounded-sm border border-clinical">MONITORING</span>
+                                            <span className="px-3 py-1 bg-transparent text-primary/40 text-[9px] font-bold uppercase tracking-widest rounded-sm border border-clinical">MONITORING</span>
                                         </td>
                                     </tr>
                                 </tbody>

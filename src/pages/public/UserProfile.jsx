@@ -146,7 +146,7 @@ const UserProfile = () => {
                                 </div>
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-[10px] font-black tracking-[0.3em] text-secondary uppercase bg-secondary-container shadow-sm px-3 py-1 rounded-full">Associate since 2019</span>
+                                        <span className="text-[10px] font-black tracking-[0.3em] text-secondary uppercase bg-transparent border border-secondary/30 shadow-sm px-3 py-1 rounded-full">Associate since 2019</span>
                                     </div>
                                     <h1 className="font-headline text-5xl font-black tracking-tighter text-primary">{profile.name}</h1>
                                     <p className="text-on-surface-variant max-w-md text-sm leading-relaxed font-body font-medium opacity-70 italic">

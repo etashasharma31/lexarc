@@ -49,8 +49,8 @@ const LawyerPanelDashboard = () => {
                                 <div className="border-l border-outline-variant/10 pl-12">
                                     <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-6">Certifications</h3>
                                     <div className="flex flex-wrap gap-2">
-                                        <span className="px-3 py-1 bg-surface-container-high text-primary text-[10px] font-bold rounded-sm border border-outline-variant/20 uppercase">Bar Council #992</span>
-                                        <span className="px-3 py-1 bg-surface-container-high text-primary text-[10px] font-bold rounded-sm border border-outline-variant/20 uppercase">M&A Expert</span>
+                                        <span className="px-3 py-1 bg-transparent text-primary text-[10px] font-bold rounded-sm border border-outline-variant/30 uppercase">Bar Council #992</span>
+                                        <span className="px-3 py-1 bg-transparent text-primary text-[10px] font-bold rounded-sm border border-outline-variant/30 uppercase">M&A Expert</span>
                                     </div>
                                 </div>
                                 <div className="border-l border-outline-variant/10 pl-12">
@@ -88,16 +88,16 @@ const LawyerPanelDashboard = () => {
                             <div className="bg-surface-container-high/50 p-8 rounded-md h-full">
                                 <div className="flex justify-between items-center mb-8">
                                     <h3 className="text-lg font-bold text-primary">Consultations</h3>
-                                    <span className="text-[10px] font-bold uppercase tracking-tighter bg-surface-container-highest px-2 py-1 rounded">Today</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-tighter border border-outline-variant/30 px-2 py-1 rounded">Today</span>
                                 </div>
                                 <div className="space-y-6">
                                     <div className="relative pl-6 border-l border-outline-variant">
-                                        <div className="absolute -left-1 top-0 w-2 h-2 rounded-full bg-primary"></div>
+                                        <div className="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-white border-2 border-primary shadow-sm"></div>
                                         <p className="text-xs font-bold text-primary mb-1">10:00 AM</p>
                                         <p className="font-bold text-sm text-on-surface">Capital Acquisitions</p>
                                     </div>
                                     <div className="relative pl-6 border-l border-outline-variant">
-                                        <div className="absolute -left-1 top-0 w-2 h-2 rounded-full bg-outline-variant"></div>
+                                        <div className="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-white border-2 border-outline-variant/30"></div>
                                         <p className="text-xs font-bold text-on-surface-variant mb-1">01:30 PM</p>
                                         <p className="font-bold text-sm text-on-surface">Estate Planning: V. Rossi</p>
                                     </div>
@@ -137,7 +137,7 @@ const LawyerPanelDashboard = () => {
                                                     <p className="text-xs text-on-surface-variant">Mergers &amp; Acquisitions</p>
                                                 </td>
                                                 <td className="px-4 py-5">
-                                                    <span className="px-2 py-1 bg-error-container text-on-error-container text-[10px] font-bold rounded-sm uppercase tracking-tighter">Signature Required</span>
+                                                    <span className="px-2 py-1 border border-error/30 text-error text-[10px] font-bold rounded-sm uppercase tracking-tighter">Signature Required</span>
                                                 </td>
                                                 <td className="px-4 py-5 text-right">
                                                     <p className="text-sm font-bold text-error">Today</p>
@@ -150,7 +150,7 @@ const LawyerPanelDashboard = () => {
                                                     <p className="text-xs text-on-surface-variant">Probate Litigation</p>
                                                 </td>
                                                 <td className="px-4 py-5">
-                                                    <span className="px-2 py-1 bg-tertiary-fixed text-on-tertiary-container text-[10px] font-bold rounded-sm uppercase tracking-tighter">Evidence Review</span>
+                                                    <span className="px-2 py-1 border border-secondary/30 text-secondary text-[10px] font-bold rounded-sm uppercase tracking-tighter">Evidence Review</span>
                                                 </td>
                                                 <td className="px-4 py-5 text-right">
                                                     <p className="text-sm font-bold text-on-surface">Apr 14</p>
@@ -163,7 +163,7 @@ const LawyerPanelDashboard = () => {
                                                     <p className="text-xs text-on-surface-variant">Corporate Finance</p>
                                                 </td>
                                                 <td className="px-4 py-5">
-                                                    <span className="px-2 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold rounded-sm uppercase tracking-tighter">Drafting</span>
+                                                    <span className="px-2 py-1 border border-primary/20 text-primary/60 text-[10px] font-bold rounded-sm uppercase tracking-tighter">Drafting</span>
                                                 </td>
                                                 <td className="px-4 py-5 text-right">
                                                     <p className="text-sm font-bold text-on-surface">Apr 16</p>
@@ -194,7 +194,7 @@ const LawyerPanelDashboard = () => {
                             </div>
                             {/*  AI Insights / Firm News  */}
                             <div className="bg-white p-8 shadow-clinical border-l-4 border-primary rounded-sm flex items-center gap-8">
-                                <div className="h-12 w-12 flex-shrink-0 bg-primary/[0.05] rounded-full flex items-center justify-center">
+                                <div className="h-12 w-12 flex-shrink-0 bg-transparent border border-primary/10 rounded-full flex items-center justify-center">
                                     <Icon name="auto_awesome" size={24} className="text-primary" />
                                 </div>
                                 <div>

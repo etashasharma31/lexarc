@@ -9,7 +9,7 @@ const Home = () => {
       <section className="relative min-h-[921px] flex items-center overflow-hidden bg-surface bg-dot-pattern">
         <div className="max-w-[1200px] mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 z-10">
-            <span className="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6">Institutional Legal Strategy</span>
+            <span className="inline-block px-3 py-1 bg-transparent border border-secondary/30 text-secondary text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6">Institutional Legal Strategy</span>
             <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary leading-[1.1] tracking-tight mb-8">
               Platform for all your <br />
               <span className="text-secondary">legal protocols.</span>
@@ -62,8 +62,8 @@ const Home = () => {
               <h3 className="font-headline text-2xl font-bold mb-4">Corporate Governance</h3>
               <p className="text-on-surface-variant mb-8 max-w-md">Master the complexities of board management, shareholder relations, and regulatory compliance with our structured frameworks.</p>
               <div className="flex gap-2">
-                <span className="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold uppercase rounded-sm">Compliance</span>
-                <span className="px-3 py-1 bg-surface-container text-on-surface-variant text-[10px] font-bold uppercase rounded-sm">Board Ops</span>
+                <span className="px-3 py-1 bg-transparent border border-clinical/10 text-on-surface-variant text-[10px] font-bold uppercase rounded-sm">Compliance</span>
+                <span className="px-3 py-1 bg-transparent border border-clinical/10 text-on-surface-variant text-[10px] font-bold uppercase rounded-sm">Board Ops</span>
               </div>
             </div>
             {/* Bento Item 2 */}

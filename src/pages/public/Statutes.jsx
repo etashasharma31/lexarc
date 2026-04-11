@@ -17,7 +17,7 @@ const STATUTES = [
         bgGradient: 'from-[#e8f0fe] to-[#c7d9f7]',
         bgIcon: '🔐',
         status: 'In Force',
-        statusColor: 'bg-emerald-50 text-emerald-700 border border-emerald-100',
+        statusColor: 'bg-transparent text-emerald-700 border border-emerald-200',
         enactedDate: 'August 11, 2023',
         effectiveDate: 'Partial — DPB Pending Operationalisation',
         annotations: 38,
@@ -48,7 +48,7 @@ const STATUTES = [
         bgGradient: 'from-[#ede9fe] to-[#d4c7f8]',
         bgIcon: '🏛️',
         status: 'In Force',
-        statusColor: 'bg-emerald-50 text-emerald-700 border border-emerald-100',
+        statusColor: 'bg-transparent text-emerald-700 border border-emerald-200',
         enactedDate: 'August 29, 2013',
         effectiveDate: 'April 1, 2014',
         annotations: 24,
@@ -81,8 +81,8 @@ function StatuteCard({ statute }) {
                     {statute.bgIcon}
                 </span>
                 <div className="relative z-10 flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-sm flex items-center justify-center shadow-md" style={{ backgroundColor: statute.accentColor }}>
-                        <Icon name={statute.icon} size={28} className="text-white" />
+                    <div className="w-14 h-14 rounded-sm flex items-center justify-center border border-white/20" style={{ color: 'white' }}>
+                        <Icon name={statute.icon} size={28} />
                     </div>
                     <div>
                         <p className="text-[10px] font-black uppercase tracking-widest mb-1" style={{ color: statute.accentColor }}>{statute.category}</p>
@@ -129,7 +129,7 @@ function StatuteCard({ statute }) {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {(expanded ? statute.keySections : statute.keySections.slice(0, 4)).map((sec, i) => (
-                            <div key={i} className="flex items-start gap-3 bg-[#f8fafc] rounded-sm px-3 py-2.5">
+                            <div key={i} className="flex items-start gap-3 bg-transparent border border-clinical/10 rounded-sm px-3 py-2.5">
                                 <span className="text-[10px] font-black uppercase tracking-wider flex-shrink-0 mt-0.5" style={{ color: statute.accentColor }}>{sec.num}</span>
                                 <span className="text-xs text-slate-600 leading-snug">{sec.title}</span>
                             </div>
@@ -146,8 +146,8 @@ function StatuteCard({ statute }) {
                 {/* Footer actions */}
                 <div className="flex items-center justify-between pt-5 border-t border-[rgba(0,21,42,0.06)]">
                     <div className="flex items-center gap-2">
-                        <span className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-sm bg-[#f1f5f9] text-slate-500">{statute.jurisdiction}</span>
-                        <span className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-sm bg-[#f1f5f9] text-slate-500">{statute.totalSections} Section{statute.totalSections > 1 ? 's' : ''}</span>
+                        <span className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-sm bg-transparent border border-clinical/10 text-slate-500">{statute.jurisdiction}</span>
+                        <span className="text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-sm bg-transparent border border-clinical/10 text-slate-500">{statute.totalSections} Section{statute.totalSections > 1 ? 's' : ''}</span>
                     </div>
                     <Link
                         to={`/guides/${statute.relatedGuide.slug}`}
