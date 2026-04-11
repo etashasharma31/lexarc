@@ -115,7 +115,7 @@ const Home = () => {
             ].map((step, idx) => (
               <div key={idx} className="relative p-8 bg-white border border-clinical shadow-clinical rounded-sm group hover:bg-primary hover:shadow-clinical-hover transition-all duration-500 overflow-hidden">
                 <span className="text-6xl font-headline font-black text-primary/[0.03] absolute -top-2 -right-2 group-hover:text-white/[0.05] transition-colors">{step.id}</span>
-                <div className="w-12 h-12 bg-primary/10 rounded-sm flex items-center justify-center mb-6 group-hover:bg-white/20">
+                <div className="w-12 h-12 border border-primary/20 rounded-sm flex items-center justify-center mb-6 group-hover:border-white/40 transition-colors">
                   <Icon name={step.icon} size={24} className="text-primary group-hover:text-on-primary" />
                 </div>
                 <h3 className="font-headline text-xl font-bold mb-4 group-hover:text-on-primary">{step.title}</h3>

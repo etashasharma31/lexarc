@@ -173,8 +173,8 @@ function AnalysisCard({ guide }) {
                     {guide.tag}
                 </span>
                 <div className="flex flex-col items-center gap-3 relative z-10">
-                    <div className="w-16 h-16 rounded-sm flex items-center justify-center shadow-md" style={{ backgroundColor: guide.accentColor }}>
-                        <Icon name={guide.icon} size={32} className="text-white" />
+                    <div className="w-16 h-16 rounded-sm flex items-center justify-center shadow-md border border-white/20" style={{ color: 'white' }}>
+                        <Icon name={guide.icon} size={32} />
                     </div>
                     <div className="text-center">
                         <p className="text-2xl font-headline font-black leading-none" style={{ color: guide.accentColor }}>{guide.stat.value}</p>
@@ -219,7 +219,7 @@ function HowToCard({ guide }) {
             <div className="relative px-6 pt-6 pb-5 border-b border-[rgba(0,21,42,0.05)]">
                 <div className="absolute top-0 left-0 right-0 h-1 rounded-t-sm" style={{ backgroundColor: guide.accentColor }} />
                 <div className="flex items-start justify-between">
-                    <div className="w-11 h-11 rounded-sm flex items-center justify-center" style={{ backgroundColor: `${guide.accentColor}15` }}>
+                    <div className="w-11 h-11 rounded-sm flex items-center justify-center border border-clinical/10">
                         <Icon name={guide.icon} size={22} style={{ color: guide.accentColor }} />
                     </div>
                     <div className="flex items-center gap-2">
@@ -242,7 +242,7 @@ function HowToCard({ guide }) {
                 <p className="text-[9px] font-black uppercase tracking-widest text-slate-400 mb-2">Key Steps</p>
                 <div className="flex flex-wrap gap-1.5">
                     {guide.steps.map((step, i) => (
-                        <span key={step} className="flex items-center gap-1 text-[10px] font-medium text-slate-600 bg-surface-container-low px-2 py-1 rounded-sm">
+                        <span key={step} className="flex items-center gap-1 text-[10px] font-medium text-slate-600 border border-clinical/10 bg-transparent px-2 py-1 rounded-sm">
                             <span className="w-3.5 h-3.5 rounded-full text-white text-[8px] font-bold flex items-center justify-center flex-shrink-0" style={{ backgroundColor: guide.accentColor }}>{i + 1}</span>
                             {step}
                         </span>

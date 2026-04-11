@@ -99,7 +99,7 @@ const Login = () => {
 {/*  Footer Links  */}
 <div className="mt-16 pt-8 border-t border-outline-variant/15 flex flex-col gap-6">
 <div className="flex items-center gap-4">
-                                <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                                <div className="w-10 h-10 rounded-full border border-outline-variant/20 flex items-center justify-center text-primary">
                                     <Icon name="verified_user" size={20} />
                                 </div>
 <div>

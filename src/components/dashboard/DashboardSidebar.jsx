@@ -19,7 +19,7 @@ const DashboardSidebar = ({ menuItems, userName, userRole, userImage }) => {
                                 flex items-center gap-3 px-4 py-3 rounded-sm transition-all duration-200
                                 ${isActive 
                                     ? 'bg-primary text-on-primary font-bold shadow-lg' 
-                                    : 'text-on-surface-variant hover:bg-surface-container-low hover:text-primary'}
+                                    : 'text-on-surface-variant hover:bg-primary/5 hover:text-primary'}
                             `}>
                                 <Icon 
                                     name={item.icon} 
@@ -35,7 +35,7 @@ const DashboardSidebar = ({ menuItems, userName, userRole, userImage }) => {
 
             {/* Profile Section */}
             <div className="p-6 border-t border-outline-variant/10">
-                <NavLink to="/user-profile" className="flex items-center gap-3 p-2 bg-surface-container-low rounded-md hover:bg-secondary-container/20 transition-all group/profile">
+                <NavLink to="/user-profile" className="flex items-center gap-3 p-2 border border-clinical/10 rounded-md hover:bg-secondary-container/20 transition-all group/profile">
                     <div className="w-10 h-10 rounded-xl overflow-hidden bg-primary flex items-center justify-center text-white shadow-sm group-hover/profile:scale-105 transition-transform">
                         {userImage ? (
                             <img src={userImage} alt={userName} className="w-full h-full object-cover" />

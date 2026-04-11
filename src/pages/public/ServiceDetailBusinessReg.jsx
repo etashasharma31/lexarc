@@ -89,7 +89,7 @@ const ServiceDetailBusinessReg = () => {
                                     onClick={() => handleDocInteraction(doc)}
                                     className="w-full text-left flex items-center p-8 bg-white border border-clinical shadow-clinical rounded-sm group hover:translate-x-3 hover:border-secondary transition-all duration-500"
                                 >
-                                    <div className="w-14 h-14 flex items-center justify-center bg-primary/[0.03] text-primary rounded-sm mr-8 shadow-clinical group-hover:bg-primary group-hover:text-white transition-all">
+                                    <div className="w-14 h-14 flex items-center justify-center bg-transparent text-primary rounded-sm mr-8 shadow-clinical group-hover:bg-primary group-hover:text-white transition-all">
                                         <Icon name={doc.icon} size={24} />
                                     </div>
                                     <div className="flex-1">

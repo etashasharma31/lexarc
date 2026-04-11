@@ -1036,8 +1036,8 @@ function GridBlock({ items }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
       {items.map((item, i) => (
-        <div key={i} className="bg-[#f8fafc] border border-[rgba(0,21,42,0.06)] rounded-sm p-5 flex gap-4 hover:border-[rgba(0,21,42,0.15)] transition-colors">
-          <div className="w-8 h-8 rounded flex items-center justify-center bg-[#e2e8f0] flex-shrink-0">
+        <div key={i} className="bg-transparent border border-[rgba(0,21,42,0.08)] rounded-sm p-5 flex gap-4 hover:border-[rgba(0,21,42,0.15)] transition-colors">
+          <div className="w-8 h-8 rounded flex items-center justify-center bg-transparent border border-clinical/10 flex-shrink-0">
             <Icon name={item.icon} size={16} className="text-[#00152a]" />
           </div>
           <div>
@@ -1384,7 +1384,7 @@ export default function GuideAnalysis() {
                     to={`/guides/${rel.slug}`}
                     className="group bg-white border border-[rgba(0,21,42,0.08)] rounded-sm p-6 hover:border-[rgba(0,21,42,0.2)] hover:shadow-clinical-hover transition-all flex items-center gap-5"
                   >
-                    <div className="w-10 h-10 rounded-sm bg-[#f1f5f9] flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors">
+                    <div className="w-10 h-10 rounded-sm bg-transparent border border-clinical/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors">
                       <Icon name="menu_book" size={18} className="text-primary group-hover:text-white transition-colors" />
                     </div>
                     <div className="min-w-0">

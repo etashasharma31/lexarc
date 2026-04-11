@@ -17,11 +17,11 @@ const Pricing = () => {
                                 Top-tier legal expertise shouldn't be a legal mystery. Choose a plan that fits your growth stage, with transparent billing and no hidden retainers.
                             </p>
                             <div className="flex items-center gap-4">
-                                <span className="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold tracking-widest uppercase text-on-surface-variant">
+                                <span className="inline-flex items-center gap-2 px-3 py-1 border border-clinical/10 rounded-full text-xs font-bold tracking-widest uppercase text-on-surface-variant">
                                     <Icon name="verified_user" size={14} />
                                     BCI Standards
                                 </span>
-                                <span className="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full text-xs font-bold tracking-widest uppercase text-on-surface-variant">
+                                <span className="inline-flex items-center gap-2 px-3 py-1 border border-clinical/10 rounded-full text-xs font-bold tracking-widest uppercase text-on-surface-variant">
                                     <Icon name="lock" size={14} />
                                     Encrypted Portals
                                 </span>

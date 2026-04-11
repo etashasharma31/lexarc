@@ -274,7 +274,7 @@ const ServicesListing = () => {
                                                     onClick={() => handleDocInteraction(doc)}
                                                     className="w-full text-left bg-white p-6 rounded-sm shadow-clinical border border-clinical hover:shadow-clinical-hover hover:border-secondary transition-all group flex items-center gap-6"
                                                 >
-                                                    <div className="w-12 h-12 bg-primary/[0.03] flex items-center justify-center rounded-sm text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                                                    <div className="w-12 h-12 bg-transparent flex items-center justify-center rounded-sm text-primary group-hover:bg-primary group-hover:text-white transition-all">
                                                         <Icon name={doc.icon} size={24} />
                                                     </div>
                                                     <div className="flex-1">
@@ -349,7 +349,7 @@ const ServicesListing = () => {
                                 </div>
 
                                 {/* Inquiry Form Section */}
-                                <div ref={formRef} className="bg-surface-container-low rounded-sm border border-clinical p-10 mt-12 animate-in fade-in slide-in-from-bottom-6 duration-700">
+                                <div ref={formRef} className="bg-white rounded-sm border border-clinical p-10 mt-12 shadow-clinical animate-in fade-in slide-in-from-bottom-6 duration-700">
                                     <div className="max-w-3xl mx-auto text-center mb-12">
                                         <span className="text-[10px] font-black text-secondary uppercase tracking-[0.2em] mb-4 block">Secured Intake Form</span>
                                         <h2 className="text-3xl font-headline font-bold text-primary mb-4">Start Your {activeSubCategory} Journey</h2>

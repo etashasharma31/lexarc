@@ -15,7 +15,7 @@ const Status = () => {
         <main className="bg-surface selection:bg-secondary-container selection:text-on-secondary-container min-h-screen pt-8 pb-24">
             <div className="max-w-[1200px] mx-auto px-8">
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 text-green-500 rounded-full mb-6">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 border border-green-500/20 text-green-500 rounded-full mb-6">
                         <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                         <span className="text-[10px] font-bold uppercase tracking-widest text-left">Systems Fully Operational</span>
                     </div>
@@ -30,7 +30,7 @@ const Status = () => {
                     </div>
                     <div className="divide-y divide-outline-variant/10">
                         {services.map((sys, i) => (
-                            <div key={i} className="p-8 flex items-center justify-between group hover:bg-surface-container-low transition-colors">
+                            <div key={i} className="p-8 flex items-center justify-between group hover:bg-primary/5 transition-colors">
                                 <div className="flex items-center gap-6">
                                     <Icon name={sys.health < 90 ? "warning" : "check_circle"} size={24} className={sys.health < 90 ? "text-secondary" : "text-green-500"} />
                                     <div>
@@ -52,11 +52,11 @@ const Status = () => {
                 </section>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="p-8 bg-surface-container-low rounded-sm border border-clinical">
+                    <div className="p-8 bg-transparent rounded-sm border border-clinical">
                         <h4 className="font-headline font-bold text-primary mb-4">Recent Stability Incidents</h4>
                         <p className="text-xs text-on-surface-variant italic">No incidents reported in the last 30 days.</p>
                     </div>
-                    <div className="p-8 bg-surface-container-low rounded-sm border border-clinical">
+                    <div className="p-8 bg-transparent rounded-sm border border-clinical">
                         <h4 className="font-headline font-bold text-primary mb-4">Scheduled Maintenance</h4>
                         <p className="text-xs text-on-surface-variant">Protocol Upgrade 12.4 scheduled for Oct 28, 02:00 UTC.</p>
                     </div>

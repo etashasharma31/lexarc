@@ -215,7 +215,7 @@ const ResourceLibrary = () => {
                             </div>
                             <div className="flex flex-wrap items-center gap-3">
                                 <div className="relative">
-                                    <select className="appearance-none bg-surface-container-low border-none rounded-sm px-4 py-2.5 pr-10 text-xs font-bold text-primary focus:ring-1 focus:ring-primary cursor-pointer">
+                                    <select className="appearance-none bg-transparent border border-clinical/20 rounded-sm px-4 py-2.5 pr-10 text-xs font-bold text-primary focus:ring-1 focus:ring-primary cursor-pointer">
                                         <option>Jurisdiction: All</option>
                                         <option>India — Central</option>
                                         <option>India — State GST</option>
@@ -224,7 +224,7 @@ const ResourceLibrary = () => {
                                     <Icon name="expand_more" size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                                 </div>
                                 <div className="relative">
-                                    <select className="appearance-none bg-surface-container-low border-none rounded-sm px-4 py-2.5 pr-10 text-xs font-bold text-primary focus:ring-1 focus:ring-primary cursor-pointer">
+                                    <select className="appearance-none bg-transparent border border-clinical/20 rounded-sm px-4 py-2.5 pr-10 text-xs font-bold text-primary focus:ring-1 focus:ring-primary cursor-pointer">
                                         <option>Complexity: Expert</option>
                                         <option>Advanced</option>
                                         <option>Intermediate</option>
@@ -246,7 +246,7 @@ const ResourceLibrary = () => {
                         {paginated.map((res) => (
                             <div key={res.id} className="group bg-white p-8 border-none shadow-[0_12px_40px_rgba(23,28,31,0.04)] hover:shadow-[0_12px_40px_rgba(23,28,31,0.08)] transition-all flex flex-col h-full rounded-sm">
                                 <div className="flex justify-between items-start mb-6">
-                                    <div className="p-3 bg-surface-container-low rounded-sm group-hover:bg-primary transition-colors">
+                                    <div className="p-3 bg-transparent border border-clinical/10 rounded-sm group-hover:bg-primary transition-colors">
                                         <Icon name={res.icon} size={20} className="text-primary group-hover:text-white transition-colors" />
                                     </div>
                                     <span className={`${tagBg[res.tagColor]} px-2 py-0.5 rounded-sm text-[10px] font-bold uppercase tracking-wider`}>
@@ -279,7 +279,7 @@ const ResourceLibrary = () => {
                             <button
                                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                                 disabled={currentPage === 1}
-                                className="w-10 h-10 flex items-center justify-center bg-surface-container-low text-slate-400 font-bold hover:bg-white hover:border hover:border-slate-100 transition-all rounded-sm disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="w-10 h-10 flex items-center justify-center bg-transparent border border-clinical/10 text-slate-400 font-bold hover:bg-white hover:border-slate-300 transition-all rounded-sm disabled:opacity-30 disabled:cursor-not-allowed"
                             >
                                 <Icon name="chevron_left" size={14} />
                             </button>
@@ -292,7 +292,7 @@ const ResourceLibrary = () => {
                                     className={`w-10 h-10 flex items-center justify-center font-bold transition-all rounded-sm text-sm ${
                                         currentPage === page
                                             ? 'bg-primary text-white shadow-clinical'
-                                            : 'bg-surface-container-low text-slate-400 hover:bg-white hover:border hover:border-slate-100'
+                                            : 'bg-transparent border border-clinical/10 text-slate-400 hover:bg-white hover:border-slate-300'
                                     }`}
                                 >
                                     {page}
@@ -303,7 +303,7 @@ const ResourceLibrary = () => {
                             <button
                                 onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                                 disabled={currentPage === totalPages || totalPages === 0}
-                                className="w-10 h-10 flex items-center justify-center bg-surface-container-low text-slate-400 font-bold hover:bg-white hover:border hover:border-slate-100 transition-all rounded-sm disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="w-10 h-10 flex items-center justify-center bg-transparent border border-clinical/10 text-slate-400 font-bold hover:bg-white hover:border-slate-300 transition-all rounded-sm disabled:opacity-30 disabled:cursor-not-allowed"
                             >
                                 <Icon name="chevron_right" size={14} />
                             </button>
