@@ -52,7 +52,7 @@ const PaymentsBilling = () => {
                                 <p className="text-[10px] font-bold text-on-surface-variant tracking-[0.2em] mb-2 uppercase opacity-40">Current Protocol</p>
                                 <div className="flex items-center gap-3">
                                     <h2 className="text-xl font-headline font-bold text-primary tracking-tight">Enterprise Pro</h2>
-                                    <span className="w-1.5 h-1.5 bg-secondary rounded-full animate-pulse"></span>
+                                    <span className="w-1.5 h-1.5 border border-secondary rounded-full animate-pulse bg-transparent"></span>
                                 </div>
                                 <p className="text-[9px] font-bold text-on-surface-variant uppercase tracking-widest opacity-30 mt-1">Active Lifecycle</p>
                             </div>
@@ -79,7 +79,7 @@ const PaymentsBilling = () => {
                                             <span className={`px-2 py-0.5 text-[8px] font-black uppercase tracking-widest rounded-sm ${
                                                 inv.status === 'Settled' 
                                                     ? 'text-secondary opacity-60' 
-                                                    : 'bg-error/10 text-error px-3 py-1'
+                                                    : 'border border-error/30 text-error px-3 py-1'
                                             }`}>
                                                 {inv.status}
                                             </span>

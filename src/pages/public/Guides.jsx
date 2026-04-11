@@ -144,16 +144,16 @@ const howToGuides = [
 ];
 
 const tagStyle = {
-    NEW: 'bg-blue-600 text-white',
-    FEATURED: 'bg-purple-600 text-white',
-    TRENDING: 'bg-emerald-600 text-white',
-    ESSENTIAL: 'bg-amber-700 text-white',
+    NEW: 'border border-blue-600/30 text-blue-600',
+    FEATURED: 'border border-purple-600/30 text-purple-600',
+    TRENDING: 'border border-emerald-600/30 text-emerald-600',
+    ESSENTIAL: 'border border-amber-700/30 text-amber-700',
 };
 
 const complexityColor = {
-    Foundational: 'bg-emerald-50 text-emerald-700',
-    Intermediate: 'bg-amber-50 text-amber-700',
-    Advanced: 'bg-red-50 text-red-700',
+    Foundational: 'border border-emerald-600/20 text-emerald-700',
+    Intermediate: 'border border-amber-600/20 text-amber-700',
+    Advanced: 'border border-red-600/20 text-red-700',
 };
 
 /* ── ANALYSIS CARD ────────────────────────────────────────────────────── */
@@ -164,8 +164,8 @@ function AnalysisCard({ guide }) {
             className="group bg-white border border-clinical rounded-sm shadow-clinical hover:shadow-clinical-hover transition-all duration-300 overflow-hidden flex flex-col"
         >
             {/* Thumbnail */}
-            <div className={`relative bg-gradient-to-br ${guide.bgGradient} h-44 flex items-center justify-center overflow-hidden`}>
-                <span className="absolute -right-4 -bottom-4 text-[120px] leading-none select-none pointer-events-none opacity-20">
+            <div className={`relative bg-slate-50 h-44 flex items-center justify-center overflow-hidden`}>
+                <span className="absolute -right-4 -bottom-4 text-[120px] leading-none select-none pointer-events-none opacity-[0.03]">
                     {guide.bgPattern}
                 </span>
                 <div className="absolute left-0 top-0 w-1 h-full" style={{ backgroundColor: guide.accentColor }} />
@@ -173,8 +173,8 @@ function AnalysisCard({ guide }) {
                     {guide.tag}
                 </span>
                 <div className="flex flex-col items-center gap-3 relative z-10">
-                    <div className="w-16 h-16 rounded-sm flex items-center justify-center shadow-md border border-white/20" style={{ color: 'white' }}>
-                        <Icon name={guide.icon} size={32} />
+                    <div className="w-16 h-16 rounded-sm flex items-center justify-center border border-clinical/10">
+                        <Icon name={guide.icon} size={32} style={{ color: guide.accentColor }} />
                     </div>
                     <div className="text-center">
                         <p className="text-2xl font-headline font-black leading-none" style={{ color: guide.accentColor }}>{guide.stat.value}</p>
@@ -194,7 +194,7 @@ function AnalysisCard({ guide }) {
                 <p className="text-slate-500 text-sm leading-relaxed mb-5 flex-1">{guide.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                     {guide.highlights.map(h => (
-                        <span key={h} className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-sm" style={{ backgroundColor: `${guide.accentColor}14`, color: guide.accentColor }}>{h}</span>
+                        <span key={h} className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-sm border border-clinical/10" style={{ color: guide.accentColor }}>{h}</span>
                     ))}
                 </div>
                 <div className="flex items-center justify-between pt-5 border-t border-clinical">
@@ -223,10 +223,10 @@ function HowToCard({ guide }) {
                         <Icon name={guide.icon} size={22} style={{ color: guide.accentColor }} />
                     </div>
                     <div className="flex items-center gap-2">
-                        <span className="text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-sm" style={{ backgroundColor: `${guide.accentColor}15`, color: guide.accentColor }}>
+                        <span className="text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-sm border border-clinical/10" style={{ color: guide.accentColor }}>
                             {guide.category}
                         </span>
-                        <span className={`text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-sm ${complexityColor[guide.complexity]}`}>
+                        <span className={`text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-sm border ${complexityColor[guide.complexity]}`}>
                             {guide.complexity}
                         </span>
                     </div>
@@ -243,7 +243,7 @@ function HowToCard({ guide }) {
                 <div className="flex flex-wrap gap-1.5">
                     {guide.steps.map((step, i) => (
                         <span key={step} className="flex items-center gap-1 text-[10px] font-medium text-slate-600 border border-clinical/10 bg-transparent px-2 py-1 rounded-sm">
-                            <span className="w-3.5 h-3.5 rounded-full text-white text-[8px] font-bold flex items-center justify-center flex-shrink-0" style={{ backgroundColor: guide.accentColor }}>{i + 1}</span>
+                            <span className="w-3.5 h-3.5 rounded-full border border-clinical/10 text-[8px] font-bold flex items-center justify-center flex-shrink-0" style={{ color: guide.accentColor }}>{i + 1}</span>
                             {step}
                         </span>
                     ))}

@@ -127,9 +127,9 @@ const TABS = ['All Resources', 'Guides', 'Templates', 'Statutes'];
 const TAB_FILTER = { 'All Resources': null, 'Guides': 'guide', 'Templates': 'template', 'Statutes': 'statute' };
 
 const tagBg = {
-    secondary: 'bg-secondary-container/30 text-on-secondary-container',
-    tertiary: 'bg-tertiary-container/30 text-on-tertiary-container',
-    surface: 'bg-surface-container-highest text-on-surface-variant',
+    secondary: 'border border-secondary-container/30 text-on-secondary-container',
+    tertiary: 'border border-tertiary-container/30 text-on-tertiary-container',
+    surface: 'border border-surface-container-highest text-on-surface-variant',
 };
 
 const ResourceLibrary = () => {

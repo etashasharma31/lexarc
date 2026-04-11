@@ -60,16 +60,16 @@ const OrdersCaseHistory = () => {
                         {/*  Bento-ish Grid Layout  */}
                         <div className="grid grid-cols-1 gap-6">
                             {/*  Order Card 1: Action Required  */}
-                            <div className="bg-white p-8 flex flex-col md:flex-row items-center gap-8 border-l-4 border-error shadow-clinical hover:shadow-clinical-hover transition-all duration-300 relative overflow-hidden group">
+                            <div className="bg-white p-8 flex flex-col md:flex-row items-center gap-8 border-l-4 border-error shadow-clinical hover:shadow-clinical-hover transition-all duration-300 relative overflow-hidden group">>
                                 <div className="absolute top-0 right-0 p-4 opacity-[0.02] group-hover:rotate-12 transition-transform">
                                     <Icon name="gavel" size={64} />
                                 </div>
-                                <div className="bg-error/[0.03] p-6 rounded-sm shrink-0">
+                                <div className="border border-error/10 p-6 rounded-sm shrink-0 bg-transparent">
                                     <Icon name="gavel" size={32} className="text-error" />
                                 </div>
                                 <div className="flex-1 space-y-1">
                                     <div className="flex items-center gap-3">
-                                        <span className="bg-error text-white text-[9px] font-bold px-2 py-0.5 tracking-[0.2em] rounded-sm">ACTION REQUIRED</span>
+                                        <span className="border border-error/30 text-error text-[9px] font-bold px-2 py-0.5 tracking-[0.2em] rounded-sm">ACTION REQUIRED</span>
                                         <span className="text-[10px] text-on-surface-variant font-bold opacity-40">#LX-2024-8842</span>
                                     </div>
                                     <h3 className="text-xl font-headline font-bold text-primary">Delaware Business Incorporation</h3>

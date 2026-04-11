@@ -974,9 +974,9 @@ function ParagraphBlock({ text }) {
 
 function AlertBlock({ variant, title, text }) {
   const styles = {
-    warning: { bg: 'bg-amber-50 border-amber-400', icon: 'warning', iconColor: 'text-amber-600', titleColor: 'text-amber-800', textColor: 'text-amber-700' },
-    critical: { bg: 'bg-red-50 border-red-400', icon: 'error', iconColor: 'text-red-600', titleColor: 'text-red-800', textColor: 'text-red-700' },
-    info: { bg: 'bg-blue-50 border-blue-400', icon: 'info', iconColor: 'text-blue-600', titleColor: 'text-blue-800', textColor: 'text-blue-700' },
+    warning: { bg: 'border-amber-400', icon: 'warning', iconColor: 'text-amber-600', titleColor: 'text-amber-800', textColor: 'text-amber-700' },
+    critical: { bg: 'border-red-400', icon: 'error', iconColor: 'text-red-600', titleColor: 'text-red-800', textColor: 'text-red-700' },
+    info: { bg: 'border-blue-400', icon: 'info', iconColor: 'text-blue-600', titleColor: 'text-blue-800', textColor: 'text-blue-700' },
   };
   const s = styles[variant] || styles.info;
   return (
@@ -1016,8 +1016,8 @@ function ListBlock({ style, heading, items, accentColor }) {
           <li key={i} className="flex gap-3 items-start">
             {style === 'numbered' ? (
               <span
-                className="flex-shrink-0 w-6 h-6 rounded-full text-white text-xs font-bold flex items-center justify-center mt-0.5"
-                style={{ backgroundColor: accentColor }}
+                className="flex-shrink-0 w-6 h-6 rounded-full border border-clinical/10 text-xs font-bold flex items-center justify-center mt-0.5"
+                style={{ color: accentColor }}
               >
                 {i + 1}
               </span>
@@ -1080,8 +1080,8 @@ function PhasesBlock({ items, accentColor }) {
     <div className="space-y-4 mb-6">
       {items.map((item, i) => (
         <div key={i} className="border border-[rgba(0,21,42,0.08)] rounded-sm overflow-hidden">
-          <div className="flex items-center gap-4 px-6 py-4" style={{ backgroundColor: `${accentColor}12` }}>
-            <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded text-white" style={{ backgroundColor: accentColor }}>
+          <div className="flex items-center gap-4 px-6 py-4 border-b border-[rgba(0,21,42,0.06)] bg-transparent">
+            <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded border border-clinical/10" style={{ color: accentColor }}>
               {item.phase}
             </span>
             <p className="font-bold text-[#00152a] text-sm">{item.title}</p>
@@ -1336,7 +1336,7 @@ export default function GuideAnalysis() {
               >
                 {/* Section Header */}
                 <div className="flex items-center gap-4 mb-8 pb-5 border-b border-[rgba(0,21,42,0.06)]">
-                  <div className="w-10 h-10 rounded-sm flex items-center justify-center" style={{ backgroundColor: `${accentColor}15` }}>
+                  <div className="w-10 h-10 rounded-sm flex items-center justify-center border border-clinical/10 bg-transparent">
                     <Icon name={section.icon} size={18} style={{ color: accentColor }} />
                   </div>
                   <h2 className="text-2xl font-headline font-bold text-[#00152a] tracking-tight">
@@ -1353,7 +1353,7 @@ export default function GuideAnalysis() {
 
             {/* ── KEY TAKEAWAYS ─── */}
             <section className="mb-16 bg-white border border-[rgba(0,21,42,0.08)] rounded-sm overflow-hidden">
-              <div className="px-8 py-5 border-b border-[rgba(0,21,42,0.06)]" style={{ backgroundColor: `${accentColor}08` }}>
+              <div className="px-8 py-5 border-b border-[rgba(0,21,42,0.06)] bg-transparent">
                 <div className="flex items-center gap-3">
                   <Icon name="format_list_bulleted" size={18} style={{ color: accentColor }} />
                   <h3 className="font-headline font-bold text-[#00152a] text-lg">Key Takeaways</h3>
@@ -1363,8 +1363,8 @@ export default function GuideAnalysis() {
                 {guide.takeaways.map((point, i) => (
                   <li key={i} className="flex items-start gap-5 px-8 py-5">
                     <span
-                      className="flex-shrink-0 w-7 h-7 rounded-full text-white text-xs font-bold flex items-center justify-center"
-                      style={{ backgroundColor: accentColor }}
+                      className="flex-shrink-0 w-7 h-7 rounded-full border border-clinical/10 text-xs font-bold flex items-center justify-center"
+                      style={{ color: accentColor }}
                     >
                       {i + 1}
                     </span>
