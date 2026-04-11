@@ -80,9 +80,11 @@ function RealTemplateCard({ tmpl }) {
                         <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">{tmpl.category}</span>
                     </div>
                 </div>
-                <h3 className="font-headline text-xl font-bold text-primary leading-snug mb-3 group-hover:text-secondary transition-colors">
-                    {tmpl.name}
-                </h3>
+                <Link to={`/templates/${tmpl.id}`}>
+                    <h3 className="font-headline text-xl font-bold text-primary leading-snug mb-3 group-hover:text-secondary transition-colors">
+                        {tmpl.name}
+                    </h3>
+                </Link>
                 <p className="text-slate-500 text-sm leading-relaxed">{tmpl.description}</p>
             </div>
 
@@ -107,12 +109,13 @@ function RealTemplateCard({ tmpl }) {
                         <p className="text-xs font-semibold text-slate-700 mt-0.5">{tmpl.format}</p>
                     </div>
                 </div>
-                <button
+                <Link
+                    to={`/templates/${tmpl.id}`}
                     className="inline-flex items-center gap-1.5 text-white text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded-sm transition-opacity hover:opacity-90"
                     style={{ backgroundColor: tmpl.accentColor }}
                 >
-                    <Icon name="download" size={13} /> Download
-                </button>
+                    View Protocols
+                </Link>
             </div>
         </div>
     );
@@ -128,16 +131,18 @@ function PlaceholderCard({ tmpl }) {
                 </div>
                 <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">{tmpl.id}</span>
             </div>
-            <h3 className="font-headline text-lg font-bold text-primary mb-4 group-hover:text-secondary transition-colors flex-1">
-                {tmpl.name}
-            </h3>
+            <Link to={`/templates/${tmpl.id}`}>
+                <h3 className="font-headline text-lg font-bold text-primary mb-4 group-hover:text-secondary transition-colors flex-1">
+                    {tmpl.name}
+                </h3>
+            </Link>
             <div className="flex flex-wrap gap-2 mb-5">
                 <span className="text-on-surface-variant text-[9px] font-bold uppercase">{tmpl.category}</span>
                 <span className={`text-[9px] font-bold uppercase ${complexityBadge[tmpl.complexity]}`}>{tmpl.complexity}</span>
             </div>
-            <button className="mt-auto flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-primary hover:text-secondary transition-colors">
-                Download Asset <Icon name="download" size={14} />
-            </button>
+            <Link to={`/templates/${tmpl.id}`} className="mt-auto flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-primary hover:text-secondary transition-colors">
+                View Details <Icon name="chevron_right" size={14} />
+            </Link>
         </div>
     );
 }

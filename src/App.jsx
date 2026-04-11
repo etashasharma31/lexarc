@@ -40,6 +40,7 @@ import Guides from './pages/public/Guides';
 import GuideAnalysis from './pages/public/GuideAnalysis';
 import Statutes from './pages/public/Statutes';
 import Status from './pages/public/Status';
+import TemplateDetail from './pages/public/TemplateDetail';
 
 import DocumentUploadProtocol from './pages/dashboard/DocumentUploadProtocol';
 
@@ -81,6 +82,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/user-services" element={<UserServices />} />
           <Route path="/templates" element={<Templates />} />
+          <Route path="/templates/:id" element={<TemplateDetail />} />
           <Route path="/guides" element={<Guides />} />
           <Route path="/guides/:slug" element={<GuideAnalysis />} />
           <Route path="/statutes" element={<Statutes />} />

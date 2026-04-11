@@ -26,7 +26,7 @@ const ALL_RESOURCES = [
         metaLabel: 'Popularity',
         tag: 'template',
         tagColor: 'tertiary',
-        link: '/templates',
+        link: '/templates/msa-saas-india',
         linkLabel: 'View Template',
     },
     {
@@ -52,7 +52,7 @@ const ALL_RESOURCES = [
         metaLabel: 'Popularity',
         tag: 'template',
         tagColor: 'tertiary',
-        link: '/templates',
+        link: '/templates/mutual-nda-india',
         linkLabel: 'View Template',
     },
     {
@@ -104,7 +104,7 @@ const ALL_RESOURCES = [
         metaLabel: 'Popularity',
         tag: 'template',
         tagColor: 'tertiary',
-        link: '/templates',
+        link: '/templates/founders-agreement',
         linkLabel: 'View Template',
     },
     {
