@@ -48,9 +48,9 @@ const LawyerPanelDashboard = () => {
                                 </div>
                                 <div className="border-l border-outline-variant/10 pl-12">
                                     <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-6">Certifications</h3>
-                                    <div className="flex flex-wrap gap-2">
-                                        <span className="px-3 py-1 bg-transparent text-primary text-[10px] font-bold rounded-sm border border-outline-variant/30 uppercase">Bar Council #992</span>
-                                        <span className="px-3 py-1 bg-transparent text-primary text-[10px] font-bold rounded-sm border border-outline-variant/30 uppercase">M&A Expert</span>
+                                    <div className="flex flex-wrap gap-3">
+                                        <span className="text-primary/40 text-[10px] font-bold uppercase">Bar Council #992</span>
+                                        <span className="text-primary/40 text-[10px] font-bold uppercase">M&A Expert</span>
                                     </div>
                                 </div>
                                 <div className="border-l border-outline-variant/10 pl-12">
@@ -194,8 +194,8 @@ const LawyerPanelDashboard = () => {
                             </div>
                             {/*  AI Insights / Firm News  */}
                             <div className="bg-white p-8 shadow-clinical border-l-4 border-primary rounded-sm flex items-center gap-8">
-                                <div className="h-12 w-12 flex-shrink-0 flex items-center justify-center">
-                                    <Icon name="auto_awesome" size={32} className="text-primary" />
+                                <div className="flex items-center justify-center text-primary transition-all">
+                                    <Icon name="auto_awesome" size={40} />
                                 </div>
                                 <div>
                                     <h4 className="text-md font-bold text-primary italic">LegalSite Insight</h4>

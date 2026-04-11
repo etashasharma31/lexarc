@@ -15,9 +15,9 @@ const Status = () => {
         <main className="bg-surface selection:bg-secondary-container selection:text-on-secondary-container min-h-screen pt-8 pb-24">
             <div className="max-w-[1200px] mx-auto px-8">
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 border border-green-500/20 text-green-500 rounded-full mb-6">
+                    <div className="inline-flex items-center gap-3 text-green-500 mb-6 font-bold uppercase tracking-widest text-left">
                         <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                        <span className="text-[10px] font-bold uppercase tracking-widest text-left">Systems Fully Operational</span>
+                        <span className="text-[10px]">Systems Fully Operational</span>
                     </div>
                     <h1 className="text-5xl font-headline font-bold text-primary tracking-tight mb-4">Platform Status</h1>
                     <p className="text-on-surface-variant">Real-time monitoring of the LegalSite structural legal nodes.</p>

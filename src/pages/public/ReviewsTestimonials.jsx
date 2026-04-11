@@ -81,7 +81,7 @@ const ReviewsTestimonials = () => {
                                     <p className="text-[10px] font-bold text-on-surface-variant uppercase tracking-[0.2em] mt-2 opacity-60">CTO, Veridia Global</p>
                                 </div>
                             </div>
-                            <span className="text-[9px] font-bold text-primary/30 uppercase tracking-[0.2em] px-4 py-2 bg-primary/[0.02] border border-clinical rounded-full">Strategic IP Litigation</span>
+                            <span className="text-[9px] font-bold text-primary/40 uppercase tracking-[0.2em]">Strategic IP Litigation</span>
                         </div>
                     </div>
 
@@ -96,8 +96,8 @@ const ReviewsTestimonials = () => {
                             </p>
                         </div>
                         <div className="flex items-center gap-4 pt-10 border-t border-white/10 mt-10">
-                            <div className="w-12 h-12 rounded-sm bg-white/10 flex items-center justify-center">
-                                <Icon name="person" size={24} className="text-white/20" />
+                            <div className="flex items-center justify-center text-white/20">
+                                <Icon name="person" size={32} />
                             </div>
                             <div>
                                 <p className="text-sm font-bold text-white leading-none">Marcus Vane</p>
@@ -116,7 +116,9 @@ const ReviewsTestimonials = () => {
                             </p>
                         </div>
                         <div className="flex items-center gap-4 pt-10 border-t border-clinical mt-10">
-                            <div className="w-12 h-12 rounded-sm bg-primary/[0.03] border border-clinical shadow-clinical"></div>
+                            <div className="flex items-center justify-center text-primary/10">
+                                <Icon name="account_circle" size={32} />
+                            </div>
                             <div>
                                 <p className="text-sm font-bold text-primary leading-none">Arthur Sterling</p>
                                 <p className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-1 opacity-40">Sterling Assets</p>
@@ -134,7 +136,9 @@ const ReviewsTestimonials = () => {
                             </p>
                         </div>
                         <div className="flex items-center gap-4 pt-10 border-t border-clinical mt-10">
-                            <div className="w-12 h-12 rounded-sm bg-primary/[0.03] border border-clinical shadow-clinical"></div>
+                            <div className="flex items-center justify-center text-primary/10">
+                                <Icon name="account_circle" size={32} />
+                            </div>
                             <div>
                                 <p className="text-sm font-bold text-primary leading-none">Dr. Sarah Laine</p>
                                 <p className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-1 opacity-40">BioNode Systems</p>
