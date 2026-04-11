@@ -995,8 +995,8 @@ function CalloutBlock({ icon, title, text, accentColor }) {
     <div className="relative bg-[#00152a] text-white rounded-sm p-8 mb-6 overflow-hidden">
       <div className="absolute inset-0 bg-dot-pattern opacity-20" />
       <div className="relative z-10 flex gap-5">
-        <div className="flex-shrink-0 w-10 h-10 rounded-sm flex items-center justify-center bg-white/10">
-          <Icon name={icon} size={20} className="text-white" />
+        <div className="flex-shrink-0 flex items-center justify-center">
+          <Icon name={icon} size={28} className="text-white" />
         </div>
         <div>
           <p className="font-headline font-bold text-base mb-2 text-white">{title}</p>
@@ -1037,8 +1037,8 @@ function GridBlock({ items }) {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
       {items.map((item, i) => (
         <div key={i} className="bg-transparent border border-[rgba(0,21,42,0.08)] rounded-sm p-5 flex gap-4 hover:border-[rgba(0,21,42,0.15)] transition-colors">
-          <div className="w-8 h-8 rounded flex items-center justify-center bg-transparent border border-clinical/10 flex-shrink-0">
-            <Icon name={item.icon} size={16} className="text-[#00152a]" />
+          <div className="flex items-center justify-center flex-shrink-0">
+            <Icon name={item.icon} size={24} className="text-[#00152a]" />
           </div>
           <div>
             <p className="font-bold text-[#00152a] text-sm mb-1">{item.title}</p>
@@ -1081,7 +1081,7 @@ function PhasesBlock({ items, accentColor }) {
       {items.map((item, i) => (
         <div key={i} className="border border-[rgba(0,21,42,0.08)] rounded-sm overflow-hidden">
           <div className="flex items-center gap-4 px-6 py-4 border-b border-[rgba(0,21,42,0.06)] bg-transparent">
-            <span className="text-[10px] font-black uppercase tracking-widest px-2.5 py-1 rounded border border-clinical/10" style={{ color: accentColor }}>
+            <span className="text-[10px] font-black uppercase tracking-widest px-0 py-1" style={{ color: accentColor }}>
               {item.phase}
             </span>
             <p className="font-bold text-[#00152a] text-sm">{item.title}</p>
@@ -1336,8 +1336,8 @@ export default function GuideAnalysis() {
               >
                 {/* Section Header */}
                 <div className="flex items-center gap-4 mb-8 pb-5 border-b border-[rgba(0,21,42,0.06)]">
-                  <div className="w-10 h-10 rounded-sm flex items-center justify-center border border-clinical/10 bg-transparent">
-                    <Icon name={section.icon} size={18} style={{ color: accentColor }} />
+                  <div className="flex items-center justify-center">
+                    <Icon name={section.icon} size={24} style={{ color: accentColor }} />
                   </div>
                   <h2 className="text-2xl font-headline font-bold text-[#00152a] tracking-tight">
                     {section.title}
@@ -1384,8 +1384,8 @@ export default function GuideAnalysis() {
                     to={`/guides/${rel.slug}`}
                     className="group bg-white border border-[rgba(0,21,42,0.08)] rounded-sm p-6 hover:border-[rgba(0,21,42,0.2)] hover:shadow-clinical-hover transition-all flex items-center gap-5"
                   >
-                    <div className="w-10 h-10 rounded-sm bg-transparent border border-clinical/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors">
-                      <Icon name="menu_book" size={18} className="text-primary group-hover:text-white transition-colors" />
+                    <div className="flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <Icon name="menu_book" size={24} className="text-primary transition-colors" />
                     </div>
                     <div className="min-w-0">
                       <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-1">{rel.category}</p>

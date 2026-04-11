@@ -35,7 +35,7 @@ const UserDashboard = () => {
                                     {/*  Case Card 1  */}
                                     <div className="group border border-transparent p-6 rounded-sm bg-white/60 hover:bg-white hover:border-clinical/20 transition-all duration-300 cursor-pointer relative overflow-hidden">
                                         <div className="flex justify-between items-start mb-4">
-                                            <span className="border border-secondary-container/30 text-on-secondary-container text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm">In Progress</span>
+                                            <span className="text-on-secondary-container text-[10px] font-bold uppercase tracking-widest px-0 py-1">In Progress</span>
                                             <span className="text-xs text-on-surface-variant font-mono">#LX-8892</span>
                                         </div>
                                         <h3 className="text-xl font-headline font-bold text-primary mb-2">Business Registration</h3>
@@ -56,7 +56,7 @@ const UserDashboard = () => {
                                     {/*  Case Card 2  */}
                                     <div className="group border border-transparent p-6 rounded-sm bg-white/60 hover:bg-white hover:border-clinical/20 transition-all duration-300 cursor-pointer relative overflow-hidden">
                                         <div className="flex justify-between items-start mb-4">
-                                            <span className="border border-surface-container-highest/30 text-on-surface-variant text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm">Pending Review</span>
+                                            <span className="text-on-surface-variant text-[10px] font-bold uppercase tracking-widest px-0 py-1">Pending Review</span>
                                             <span className="text-xs text-on-surface-variant font-mono">#LX-9014</span>
                                         </div>
                                         <h3 className="text-xl font-headline font-bold text-primary mb-2">Trademark Filing</h3>
@@ -133,15 +133,15 @@ const UserDashboard = () => {
                                 <h2 className="text-lg font-headline font-bold text-primary mb-8">Upcoming Deadlines</h2>
                                 <div className="relative space-y-10 before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[1px] before:bg-outline-variant/30">
                                     <div className="relative pl-8">
-                                        <div className="absolute left-0 top-1 w-[22px] h-[22px] rounded-full border-2 border-error flex items-center justify-center text-error ring-4 ring-white shadow-sm bg-transparent">
-                                            <Icon name="priority_high" size={12} strokeWidth={3} />
+                                        <div className="absolute left-[2px] top-1 flex items-center justify-center text-error ring-4 ring-white shadow-sm bg-transparent">
+                                            <Icon name="priority_high" size={18} strokeWidth={3} />
                                         </div>
                                         <p className="text-[10px] font-bold text-error uppercase tracking-widest mb-1">Oct 24, 2024</p>
                                         <h4 className="font-bold text-sm text-primary">IP Office Response Due</h4>
                                     </div>
                                     <div className="relative pl-8">
-                                        <div className="absolute left-0 top-1 w-[22px] h-[22px] rounded-full border-2 border-primary flex items-center justify-center text-primary ring-4 ring-white shadow-sm bg-transparent">
-                                            <Icon name="event" size={12} strokeWidth={3} />
+                                        <div className="absolute left-[2px] top-1 flex items-center justify-center text-primary ring-4 ring-white shadow-sm bg-transparent">
+                                            <Icon name="event" size={18} strokeWidth={3} />
                                         </div>
                                         <p className="text-[10px] font-bold text-primary-container uppercase tracking-widest mb-1">Oct 28, 2024</p>
                                         <h4 className="font-bold text-sm text-primary">Tax ID Certification</h4>

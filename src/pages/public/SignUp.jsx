@@ -22,8 +22,8 @@ const SignUp = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-transparent p-2 rounded-sm border border-white/20">
-                  <Icon name="verified" size={20} className="text-secondary-fixed" />
+                <div className="flex items-center justify-center">
+                  <Icon name="verified" size={24} className="text-secondary-fixed" />
                 </div>
                 <div>
                   <p className="font-bold text-sm">Verified Counsel</p>
@@ -31,8 +31,8 @@ const SignUp = () => {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="bg-transparent p-2 rounded-sm border border-white/20">
-                  <Icon name="security" size={20} className="text-secondary-fixed" />
+                <div className="flex items-center justify-center">
+                  <Icon name="security" size={24} className="text-secondary-fixed" />
                 </div>
                 <div>
                   <p className="font-bold text-sm">Data Integrity</p>
@@ -120,11 +120,11 @@ const SignUp = () => {
           <div className="mt-8 pt-8 border-t border-outline-variant/10 flex items-center justify-center gap-6">
             <span className="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant opacity-40">Or sign up with</span>
             <div className="flex gap-4">
-              <button className="w-10 h-10 rounded-full bg-transparent border border-clinical flex items-center justify-center hover:bg-white transition-colors">
-                <Icon name="google" size={18} className="text-primary" />
+              <button className="flex items-center justify-center hover:scale-110 transition-transform">
+                <Icon name="google" size={24} className="text-primary" />
               </button>
-              <button className="w-10 h-10 rounded-full bg-transparent border border-clinical flex items-center justify-center hover:bg-white transition-colors">
-                <Icon name="linkedin" size={18} className="text-primary" />
+              <button className="flex items-center justify-center hover:scale-110 transition-transform">
+                <Icon name="linkedin" size={24} className="text-primary" />
               </button>
             </div>
           </div>

@@ -42,8 +42,8 @@ const CheckoutReview = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
                                 <button type="button" className="col-span-3 flex items-center gap-4 group cursor-pointer w-fit">
-                                    <div className="w-5 h-5 bg-primary rounded-sm flex items-center justify-center shadow-clinical">
-                                        <Icon name="check" size={14} className="text-white" />
+                                    <div className="flex items-center justify-center text-primary">
+                                        <Icon name="check" size={20} />
                                     </div>
                                     <span className="text-[11px] font-bold text-primary/60 uppercase tracking-widest">Address is verified for compliance</span>
                                 </button>
@@ -59,8 +59,8 @@ const CheckoutReview = () => {
                             <h2 className="font-headline font-bold text-2xl text-primary mb-10 pb-6 border-b border-clinical">Strategic Summary</h2>
                             
                             <div className="flex items-start gap-6 mb-10">
-                                <div className="w-16 h-16 bg-primary/[0.03] flex items-center justify-center rounded-sm text-primary shadow-clinical border border-clinical group-hover:scale-105 transition-transform duration-500">
-                                    <Icon name="account_balance" size={32} />
+                                <div className="flex items-center justify-center text-primary transition-transform duration-500">
+                                    <Icon name="account_balance" size={48} />
                                 </div>
                                 <div>
                                     <p className="font-headline font-bold text-lg text-primary">GST Configuration</p>

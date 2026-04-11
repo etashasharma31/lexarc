@@ -107,8 +107,8 @@ const AdminDashboard = () => {
                             <div className="bg-white p-10 shadow-clinical border border-clinical rounded-sm">
                                 <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/30 mb-8">PRIMARY PRACTICE</h3>
                                 <div className="flex gap-6 items-center">
-                                    <div className="w-14 h-14 bg-transparent border border-clinical shadow-clinical flex items-center justify-center text-primary">
-                                        <Icon name="corporate_fare" size={28} />
+                                    <div className="flex items-center justify-center text-primary">
+                                        <Icon name="corporate_fare" size={40} />
                                     </div>
                                     <div>
                                         <p className="text-sm font-bold text-primary uppercase tracking-widest">Mergers & Acquisitions</p>
@@ -141,7 +141,7 @@ const AdminDashboard = () => {
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">142 Cases</td>
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">14.2 Days</td>
                                         <td className="px-8 py-6 text-right">
-                                            <span className="px-3 py-1 bg-transparent text-secondary text-[9px] font-bold uppercase tracking-widest rounded-sm border border-secondary/30 shadow-clinical">OPTIMAL</span>
+                                            <span className="text-secondary text-[9px] font-bold uppercase tracking-widest">OPTIMAL</span>
                                         </td>
                                     </tr>
                                     <tr className="hover:bg-primary/[0.01] transition-all cursor-pointer group">
@@ -149,7 +149,7 @@ const AdminDashboard = () => {
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">89 Cases</td>
                                         <td className="px-8 py-6 text-[11px] font-bold text-primary/40 uppercase tracking-widest">45.0 Days</td>
                                         <td className="px-8 py-6 text-right">
-                                            <span className="px-3 py-1 bg-transparent text-primary/40 text-[9px] font-bold uppercase tracking-widest rounded-sm border border-clinical">MONITORING</span>
+                                            <span className="text-primary/40 text-[9px] font-bold uppercase tracking-widest">MONITORING</span>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -161,16 +161,16 @@ const AdminDashboard = () => {
                             <h3 className="text-[10px] font-bold text-primary/30 uppercase tracking-[0.2em] mb-10 pb-6 border-b border-clinical">PROTOCOL FEED</h3>
                             <div className="space-y-10 relative before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[1px] before:bg-clinical">
                                 <div className="relative pl-10">
-                                    <div className="absolute left-0 top-1 w-[24px] h-[24px] rounded-full bg-white border border-clinical shadow-clinical flex items-center justify-center text-primary">
-                                        <Icon name="history_edu" size={12} />
+                                    <div className="absolute left-[3px] top-1 flex items-center justify-center text-primary">
+                                        <Icon name="history_edu" size={16} />
                                     </div>
                                     <p className="text-sm font-bold text-primary leading-none">Firm Registry Protocol</p>
                                     <p className="text-[10px] text-on-surface-variant mt-2 opacity-60">Sullivan & Cromwell LLP joined the Directorate network.</p>
                                     <p className="text-[9px] text-primary/30 uppercase tracking-widest font-bold mt-2">2m ago</p>
                                 </div>
                                 <div className="relative pl-10">
-                                    <div className="absolute left-0 top-1 w-[24px] h-[24px] rounded-full bg-white border border-clinical shadow-clinical flex items-center justify-center text-secondary">
-                                        <Icon name="verified" size={12} />
+                                    <div className="absolute left-[3px] top-1 flex items-center justify-center text-secondary">
+                                        <Icon name="verified" size={16} />
                                     </div>
                                     <p className="text-sm font-bold text-primary leading-none">Security Cycle Complete</p>
                                     <p className="text-[10px] text-on-surface-variant mt-2 opacity-60">Encrypted redundant archive stored in US-East-1.</p>

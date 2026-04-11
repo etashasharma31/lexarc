@@ -16,14 +16,14 @@ const CheckoutConfirmation = () => {
                     
                     <div className="relative z-10">
                         <div className="flex items-center gap-3 mb-12">
-                            <div className="w-8 h-8 bg-white/10 backdrop-blur-lg rounded-sm flex items-center justify-center border border-white/20">
-                                <Icon name="policy" size={18} className="text-white" />
+                            <div className="flex items-center justify-center">
+                                <Icon name="policy" size={24} className="text-white" />
                             </div>
                             <span className="text-xl font-headline font-bold text-white tracking-tighter">LegalSite</span>
                         </div>
                         
-                        <div className="w-20 h-20 bg-white/10 backdrop-blur-md flex items-center justify-center mb-10 border border-white/20 shadow-clinical">
-                            <Icon name="verified" size={48} className="text-white" />
+                        <div className="flex items-center justify-center mb-10">
+                            <Icon name="verified" size={64} className="text-white" />
                         </div>
                         
                         <h2 className="text-4xl font-headline font-bold text-white leading-tight mb-4 tracking-tight">Protocol Initiated.</h2>

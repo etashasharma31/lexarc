@@ -88,13 +88,13 @@ const ActivityLog = () => {
                     <div className="relative w-full max-w-xl bg-gradient-satin rounded-[2.5rem] border border-white/10 shadow-[0_40px_100px_rgba(0,0,0,0.6)] overflow-hidden animate-in zoom-in-95 duration-500">
                         <div className="absolute inset-0 bg-dot-pattern opacity-10 pointer-events-none"></div>
                         <div className="p-12 space-y-8 relative z-10">
-                            <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-black/20 bg-transparent border-2 ${selectedItem.isUrgent ? 'border-error text-error animate-pulse-soft' : 'border-primary text-primary'}`}>
-                                <Icon name={selectedItem.icon} size={32} />
+                            <div className={`flex items-center justify-center mx-auto ${selectedItem.isUrgent ? 'text-error animate-pulse-soft' : 'text-primary'}`}>
+                                <Icon name={selectedItem.icon} size={48} />
                             </div>
                             
                             <div className="text-center space-y-4">
                                 <div className="flex items-center justify-center gap-3">
-                                    <span className={`text-[10px] font-black tracking-[0.3em] uppercase px-3 py-1 rounded-full bg-transparent border ${selectedItem.isUrgent ? 'border-error text-error' : 'border-white/10 text-white/60'}`}>
+                                    <span className={`text-[10px] font-black tracking-[0.3em] uppercase px-0 py-1 ${selectedItem.isUrgent ? 'text-error' : 'text-white/60'}`}>
                                         {selectedItem.type}
                                     </span>
                                     <span className="text-[10px] text-white/30 font-bold uppercase tracking-widest">{selectedItem.time}</span>
@@ -187,8 +187,8 @@ const ActivityLog = () => {
                                     <div key={item.id} className={`group relative bg-white p-8 shadow-clinical hover:shadow-clinical-hover border-l-4 transition-all flex gap-8 animate-in fade-in slide-in-from-bottom-4 duration-700 fill-mode-backwards ${
                                         item.isUrgent ? 'border-error' : item.isUnread ? 'border-primary' : 'border-clinical'
                                     }`} style={{ animationDelay: `${idx * 100}ms` }}>
-                                        <div className="flex-shrink-0 w-12 h-12 bg-transparent border border-clinical/10 flex items-center justify-center rounded-sm">
-                                            <Icon name={item.icon} size={24} className={item.isUrgent ? 'text-error' : 'text-primary'} />
+                                        <div className="flex-shrink-0 flex items-center justify-center">
+                                            <Icon name={item.icon} size={28} className={item.isUrgent ? 'text-error' : 'text-primary'} />
                                         </div>
                                         <div className="flex-1">
                                             <div className="flex items-start justify-between mb-2">

@@ -62,13 +62,13 @@ const DocumentUploadProtocol = () => {
             <main className="max-w-[1200px] mx-auto px-8 pt-12 pb-24">
                 <header className="mb-12 flex items-center justify-between animate-in fade-in slide-in-from-top-4 duration-700">
                     <div className="flex items-center gap-6">
-                        <button onClick={() => navigate(-1)} className="p-3 bg-white border border-clinical shadow-clinical rounded-sm group hover:scale-105 transition-all">
-                            <Icon name="arrow_back" size={20} className="text-primary group-hover:-translate-x-1 transition-transform" />
+                        <button onClick={() => navigate(-1)} className="p-3 transition-all">
+                            <Icon name="arrow_back" size={32} className="text-primary group-hover:-translate-x-1 transition-transform" />
                         </button>
                         <div>
                             <div className="flex items-center gap-3 mb-1">
                                 <span className="text-[10px] font-black text-secondary tracking-[0.3em] uppercase">{docMeta.category}</span>
-                                <span className="h-1 w-1 bg-clinical rounded-full"></span>
+                                <span className="h-1 w-1 bg-clinical rounded-full opacity-20"></span>
                                 <span className="text-[10px] font-bold text-primary/30 tracking-widest uppercase">{docMeta.subLabel}</span>
                             </div>
                             <h1 className="text-4xl font-headline font-bold text-primary tracking-tighter uppercase">{docMeta.title}</h1>
@@ -88,8 +88,8 @@ const DocumentUploadProtocol = () => {
                             
                             {uploadStatus === 'IDLE' && (
                                 <div className="space-y-8 animate-in zoom-in-95 duration-500">
-                                    <div className="w-24 h-24 bg-transparent border-2 border-primary/20 text-primary rounded-2xl flex items-center justify-center mx-auto shadow-clinical group-hover:scale-110 transition-transform duration-700">
-                                        <Icon name="cloud_upload" size={48} className="animate-bounce-slow" />
+                                    <div className="flex items-center justify-center mx-auto transition-transform duration-700">
+                                        <Icon name="cloud_upload" size={64} className="text-primary animate-bounce-slow" />
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-xl font-headline font-bold text-primary tracking-tight">Integrated Submission Protocol</h2>
@@ -126,8 +126,8 @@ const DocumentUploadProtocol = () => {
 
                             {uploadStatus === 'COMPLETE' && (
                                 <div className="space-y-8 animate-in zoom-in-95 duration-700">
-                                    <div className="w-24 h-24 bg-transparent border-2 border-secondary text-secondary rounded-2xl flex items-center justify-center mx-auto shadow-clinical shadow-secondary/10">
-                                        <Icon name="check_circle" size={48} />
+                                    <div className="flex items-center justify-center mx-auto">
+                                        <Icon name="check_circle" size={80} className="text-secondary" />
                                     </div>
                                     <div className="space-y-2">
                                         <h2 className="text-2xl font-headline font-bold text-primary tracking-tight">Audit Synchronized</h2>

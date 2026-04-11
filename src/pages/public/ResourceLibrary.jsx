@@ -127,9 +127,9 @@ const TABS = ['All Resources', 'Guides', 'Templates', 'Statutes'];
 const TAB_FILTER = { 'All Resources': null, 'Guides': 'guide', 'Templates': 'template', 'Statutes': 'statute' };
 
 const tagBg = {
-    secondary: 'border border-secondary-container/30 text-on-secondary-container',
-    tertiary: 'border border-tertiary-container/30 text-on-tertiary-container',
-    surface: 'border border-surface-container-highest text-on-surface-variant',
+    secondary: 'text-secondary-fixed',
+    tertiary: 'text-tertiary-fixed',
+    surface: 'text-on-surface-variant',
 };
 
 const ResourceLibrary = () => {
@@ -167,7 +167,7 @@ const ResourceLibrary = () => {
                                 <div className="absolute inset-0 bg-gradient-to-r from-[#00152a] via-[#00152a]/80 to-transparent"></div>
                             </div>
                             <div className="relative z-10 px-16 max-w-2xl">
-                                <span className="inline-block bg-primary-container/30 backdrop-blur-md text-white px-3 py-1 rounded-sm text-[10px] font-bold uppercase tracking-widest mb-6 border border-white/10">
+                                <span className="inline-block text-white px-0 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">
                                     Editor's Choice
                                 </span>
                                 <h2 className="text-white text-5xl font-headline font-extrabold tracking-tight mb-6 leading-tight">
@@ -246,10 +246,10 @@ const ResourceLibrary = () => {
                         {paginated.map((res) => (
                             <div key={res.id} className="group bg-white p-8 border-none shadow-[0_12px_40px_rgba(23,28,31,0.04)] hover:shadow-[0_12px_40px_rgba(23,28,31,0.08)] transition-all flex flex-col h-full rounded-sm">
                                 <div className="flex justify-between items-start mb-6">
-                                    <div className="p-3 bg-transparent border border-clinical/10 rounded-sm group-hover:bg-primary transition-colors">
-                                        <Icon name={res.icon} size={20} className="text-primary group-hover:text-white transition-colors" />
+                                    <div className="flex items-center justify-center text-primary transition-colors">
+                                        <Icon name={res.icon} size={28} />
                                     </div>
-                                    <span className={`${tagBg[res.tagColor]} px-2 py-0.5 rounded-sm text-[10px] font-bold uppercase tracking-wider`}>
+                                    <span className={`${tagBg[res.tagColor]} text-[10px] font-bold uppercase tracking-wider`}>
                                         {res.type}
                                     </span>
                                 </div>
@@ -279,7 +279,7 @@ const ResourceLibrary = () => {
                             <button
                                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                                 disabled={currentPage === 1}
-                                className="w-10 h-10 flex items-center justify-center bg-transparent border border-clinical/10 text-slate-400 font-bold hover:bg-white hover:border-slate-300 transition-all rounded-sm disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="w-10 h-10 flex items-center justify-center bg-transparent text-slate-400 font-bold hover:text-primary transition-all disabled:opacity-30 disabled:cursor-not-allowed"
                             >
                                 <Icon name="chevron_left" size={14} />
                             </button>
@@ -291,8 +291,8 @@ const ResourceLibrary = () => {
                                     onClick={() => setCurrentPage(page)}
                                     className={`w-10 h-10 flex items-center justify-center font-bold transition-all rounded-sm text-sm ${
                                         currentPage === page
-                                            ? 'bg-primary text-white shadow-clinical'
-                                            : 'bg-transparent border border-clinical/10 text-slate-400 hover:bg-white hover:border-slate-300'
+                                            ? 'text-primary font-black'
+                                            : 'bg-transparent text-slate-400 hover:text-primary'
                                     }`}
                                 >
                                     {page}
@@ -303,7 +303,7 @@ const ResourceLibrary = () => {
                             <button
                                 onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                                 disabled={currentPage === totalPages || totalPages === 0}
-                                className="w-10 h-10 flex items-center justify-center bg-transparent border border-clinical/10 text-slate-400 font-bold hover:bg-white hover:border-slate-300 transition-all rounded-sm disabled:opacity-30 disabled:cursor-not-allowed"
+                                className="w-10 h-10 flex items-center justify-center bg-transparent text-slate-400 font-bold hover:text-primary transition-all disabled:opacity-30 disabled:cursor-not-allowed"
                             >
                                 <Icon name="chevron_right" size={14} />
                             </button>

@@ -81,8 +81,8 @@ function StatuteCard({ statute }) {
                     {statute.bgIcon}
                 </span>
                 <div className="relative z-10 flex items-center gap-5">
-                    <div className="w-14 h-14 rounded-sm flex items-center justify-center border border-white/20" style={{ color: 'white' }}>
-                        <Icon name={statute.icon} size={28} />
+                    <div className="flex items-center justify-center" style={{ color: 'white' }}>
+                        <Icon name={statute.icon} size={32} />
                     </div>
                     <div>
                         <p className="text-[10px] font-black uppercase tracking-widest mb-1" style={{ color: statute.accentColor }}>{statute.category}</p>
@@ -129,7 +129,7 @@ function StatuteCard({ statute }) {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {(expanded ? statute.keySections : statute.keySections.slice(0, 4)).map((sec, i) => (
-                            <div key={i} className="flex items-start gap-3 bg-transparent border border-clinical/10 rounded-sm px-3 py-2.5">
+                            <div key={i} className="flex items-start gap-4 py-3 border-b border-clinical/10 last:border-none">
                                 <span className="text-[10px] font-black uppercase tracking-wider flex-shrink-0 mt-0.5" style={{ color: statute.accentColor }}>{sec.num}</span>
                                 <span className="text-xs text-slate-600 leading-snug">{sec.title}</span>
                             </div>

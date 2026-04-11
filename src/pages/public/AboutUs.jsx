@@ -16,7 +16,7 @@ const AboutUs = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#00152a]"></div>
                 </div>
                 <div className="max-w-[1200px] mx-auto px-8 w-full relative z-10 text-center">
-                    <span className="inline-block px-3 py-1 bg-transparent border border-secondary/30 text-secondary text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6">Our Legacy</span>
+                    <span className="inline-block px-0 py-1 bg-transparent text-secondary text-[10px] font-bold tracking-[0.2em] uppercase mb-6">Our Legacy</span>
                     <h1 className="font-headline text-5xl md:text-7xl font-bold text-white leading-tight tracking-tighter mb-8">
                         Building the <br />
                         <span className="text-secondary-fixed-dim">Future of Justice.</span>
@@ -38,13 +38,13 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className="lg:col-span-6 grid grid-cols-2 gap-4">
-                    <div className="bg-white p-8 border border-clinical shadow-clinical rounded-sm">
-                        <Icon name="policy" size={32} className="text-secondary mb-4" />
+                    <div className="bg-white p-8 rounded-sm">
+                        <Icon name="policy" size={40} className="text-secondary mb-4" />
                         <h4 className="font-bold text-primary mb-2">Structural Analysis</h4>
                         <p className="text-xs text-on-surface-variant">Deep-dive assessment of corporate risk and governance strategy.</p>
                     </div>
-                    <div className="bg-primary p-8 rounded-sm shadow-clinical-hover">
-                        <Icon name="verified" size={32} className="text-secondary-fixed-dim mb-4" />
+                    <div className="bg-primary/5 p-8 rounded-sm">
+                        <Icon name="verified" size={40} className="text-secondary-fixed-dim mb-4" />
                         <h4 className="font-bold text-on-primary mb-2">Authenticated Results</h4>
                         <p className="text-xs text-on-primary/70">Verified outcomes through rigorous legal and technical validation.</p>
                     </div>

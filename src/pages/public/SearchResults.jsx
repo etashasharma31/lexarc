@@ -19,7 +19,7 @@ const SearchResults = () => {
 </div>
 </div>
 <div className="pb-2">
-<span className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant bg-surface-container px-3 py-1.5">24 results found</span>
+<span className="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant font-bold">24 results found</span>
 </div>
 </div>
 </section>
@@ -87,8 +87,8 @@ const SearchResults = () => {
 <p className="text-xs font-label text-on-surface-variant uppercase tracking-wider mb-3">Senior Partner</p>
 <p className="text-sm text-on-surface-variant line-clamp-2 mb-4">Lead strategist for LegalSite's patent portfolio and structural disputes.</p>
 <div className="flex flex-wrap gap-2">
-<span className="px-2 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-tighter">IP Law</span>
-<span className="px-2 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-tighter">New York</span>
+<span className="text-[10px] font-bold uppercase tracking-tighter text-primary/40">IP Law</span>
+<span className="text-[10px] font-bold uppercase tracking-tighter text-primary/40">New York</span>
 </div>
 </div>
 <div className="bg-surface-container-lowest p-6 shadow-[0_12px_40px_rgba(23,28,31,0.06)] group hover:-translate-y-1 transition-transform cursor-pointer">
@@ -97,8 +97,8 @@ const SearchResults = () => {
 <p className="text-xs font-label text-on-surface-variant uppercase tracking-wider mb-3">Associate Counsel</p>
 <p className="text-sm text-on-surface-variant line-clamp-2 mb-4">Specializing in international building codes and cross-border compliance.</p>
 <div className="flex flex-wrap gap-2">
-<span className="px-2 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-tighter">Compliance</span>
-<span className="px-2 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-tighter">London</span>
+<span className="text-[10px] font-bold uppercase tracking-tighter text-primary/40">Compliance</span>
+<span className="text-[10px] font-bold uppercase tracking-tighter text-primary/40">London</span>
 </div>
 </div>
 <div className="bg-surface-container-lowest p-6 shadow-[0_12px_40px_rgba(23,28,31,0.06)] group hover:-translate-y-1 transition-transform cursor-pointer">
@@ -107,8 +107,8 @@ const SearchResults = () => {
 <p className="text-xs font-label text-on-surface-variant uppercase tracking-wider mb-3">Consulting Counsel</p>
 <p className="text-sm text-on-surface-variant line-clamp-2 mb-4">Dual-certified expert witness for structural integrity and zoning regulations.</p>
 <div className="flex flex-wrap gap-2">
-<span className="px-2 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-tighter">Litigation</span>
-<span className="px-2 py-1 bg-surface-container text-[10px] font-bold uppercase tracking-tighter">Paris</span>
+<span className="text-[10px] font-bold uppercase tracking-tighter text-primary/40">Litigation</span>
+<span className="text-[10px] font-bold uppercase tracking-tighter text-primary/40">Paris</span>
 </div>
 </div>
 </div>
@@ -152,8 +152,8 @@ const SearchResults = () => {
 <h3 className="font-headline text-xl font-bold text-primary mb-3">LegalSite Compliance Suite</h3>
 <p className="text-sm text-on-surface-variant">A curated digital environment for real-time regulatory tracking across 45 jurisdictions.</p>
 </div>
-<div className="w-24 h-24 bg-surface-container rounded-sm flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
-<Icon name="inventory_2" size={40} />
+<div className="flex items-center justify-center text-primary">
+<Icon name="inventory_2" size={48} />
 </div>
 </div>
 </div>

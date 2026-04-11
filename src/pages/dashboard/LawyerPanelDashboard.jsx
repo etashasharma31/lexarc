@@ -88,7 +88,7 @@ const LawyerPanelDashboard = () => {
                             <div className="bg-surface-container-high/50 p-8 rounded-md h-full">
                                 <div className="flex justify-between items-center mb-8">
                                     <h3 className="text-lg font-bold text-primary">Consultations</h3>
-                                    <span className="text-[10px] font-bold uppercase tracking-tighter border border-outline-variant/30 px-2 py-1 rounded">Today</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-tighter px-0 py-1">Today</span>
                                 </div>
                                 <div className="space-y-6">
                                     <div className="relative pl-6 border-l border-outline-variant">
@@ -137,7 +137,7 @@ const LawyerPanelDashboard = () => {
                                                     <p className="text-xs text-on-surface-variant">Mergers &amp; Acquisitions</p>
                                                 </td>
                                                 <td className="px-4 py-5">
-                                                    <span className="px-2 py-1 border border-error/30 text-error text-[10px] font-bold rounded-sm uppercase tracking-tighter">Signature Required</span>
+                                                    <span className="text-error text-[10px] font-bold uppercase tracking-tighter">Signature Required</span>
                                                 </td>
                                                 <td className="px-4 py-5 text-right">
                                                     <p className="text-sm font-bold text-error">Today</p>
@@ -150,7 +150,7 @@ const LawyerPanelDashboard = () => {
                                                     <p className="text-xs text-on-surface-variant">Probate Litigation</p>
                                                 </td>
                                                 <td className="px-4 py-5">
-                                                    <span className="px-2 py-1 border border-secondary/30 text-secondary text-[10px] font-bold rounded-sm uppercase tracking-tighter">Evidence Review</span>
+                                                    <span className="text-secondary text-[10px] font-bold uppercase tracking-tighter">Evidence Review</span>
                                                 </td>
                                                 <td className="px-4 py-5 text-right">
                                                     <p className="text-sm font-bold text-on-surface">Apr 14</p>
@@ -163,7 +163,7 @@ const LawyerPanelDashboard = () => {
                                                     <p className="text-xs text-on-surface-variant">Corporate Finance</p>
                                                 </td>
                                                 <td className="px-4 py-5">
-                                                    <span className="px-2 py-1 border border-primary/20 text-primary/60 text-[10px] font-bold rounded-sm uppercase tracking-tighter">Drafting</span>
+                                                    <span className="text-primary/60 text-[10px] font-bold uppercase tracking-tighter">Drafting</span>
                                                 </td>
                                                 <td className="px-4 py-5 text-right">
                                                     <p className="text-sm font-bold text-on-surface">Apr 16</p>
@@ -194,8 +194,8 @@ const LawyerPanelDashboard = () => {
                             </div>
                             {/*  AI Insights / Firm News  */}
                             <div className="bg-white p-8 shadow-clinical border-l-4 border-primary rounded-sm flex items-center gap-8">
-                                <div className="h-12 w-12 flex-shrink-0 bg-transparent border border-primary/10 rounded-full flex items-center justify-center">
-                                    <Icon name="auto_awesome" size={24} className="text-primary" />
+                                <div className="h-12 w-12 flex-shrink-0 flex items-center justify-center">
+                                    <Icon name="auto_awesome" size={32} className="text-primary" />
                                 </div>
                                 <div>
                                     <h4 className="text-md font-bold text-primary italic">LegalSite Insight</h4>

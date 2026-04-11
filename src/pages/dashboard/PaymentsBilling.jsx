@@ -79,7 +79,7 @@ const PaymentsBilling = () => {
                                             <span className={`px-2 py-0.5 text-[8px] font-black uppercase tracking-widest rounded-sm ${
                                                 inv.status === 'Settled' 
                                                     ? 'text-secondary opacity-60' 
-                                                    : 'border border-error/30 text-error px-3 py-1'
+                                                    : 'text-error font-black'
                                             }`}>
                                                 {inv.status}
                                             </span>

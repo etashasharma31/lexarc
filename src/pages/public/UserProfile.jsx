@@ -146,7 +146,7 @@ const UserProfile = () => {
                                 </div>
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-[10px] font-black tracking-[0.3em] text-secondary uppercase bg-transparent border border-secondary/30 shadow-sm px-3 py-1 rounded-full">Associate since 2019</span>
+                                        <span className="text-[10px] font-black tracking-[0.3em] text-secondary uppercase bg-transparent px-0 py-1">Associate since 2019</span>
                                     </div>
                                     <h1 className="font-headline text-5xl font-black tracking-tighter text-primary">{profile.name}</h1>
                                     <p className="text-on-surface-variant max-w-md text-sm leading-relaxed font-body font-medium opacity-70 italic">
@@ -174,8 +174,8 @@ const UserProfile = () => {
                                 <div className="bg-white p-12 rounded-[2.5rem] border border-clinical shadow-clinical group hover:shadow-clinical-hover transition-all duration-500 relative overflow-hidden">
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-primary/[0.01] rounded-full -mr-16 -mt-16 group-hover:bg-primary/[0.03] transition-colors"></div>
                                     <div className="flex items-center gap-5 mb-12">
-                                        <div className="w-12 h-12 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary shadow-inner">
-                                            <Icon name="person" size={24} />
+                                        <div className="flex items-center justify-center text-primary">
+                                            <Icon name="person" size={28} />
                                         </div>
                                         <div>
                                             <h3 className="font-headline text-2xl font-black text-primary tracking-tight">Identity Node</h3>
@@ -226,8 +226,8 @@ const UserProfile = () => {
                                 {/*  Firm Associations  */}
                                 <div className="bg-white p-12 rounded-[2.5rem] border border-clinical shadow-clinical relative overflow-hidden group">
                                      <div className="flex items-center gap-5 mb-12">
-                                        <div className="w-12 h-12 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary shadow-inner">
-                                            <Icon name="corporate_fare" size={24} />
+                                        <div className="flex items-center justify-center text-primary">
+                                            <Icon name="corporate_fare" size={28} />
                                         </div>
                                         <div>
                                             <h3 className="font-headline text-2xl font-black text-primary tracking-tight">Firm Affiliations</h3>
@@ -239,7 +239,7 @@ const UserProfile = () => {
                                         {firms.map((firm, i) => (
                                             <div key={i} className={`flex items-center justify-between p-8 rounded-3xl border border-clinical transition-all duration-300 ${firm.active ? 'bg-surface border-primary/10 shadow-sm' : 'opacity-40 grayscale hover:grayscale-0'}`}>
                                                 <div className="flex items-center gap-6">
-                                                    <div className="w-14 h-14 bg-gradient-satin rounded-2xl flex items-center justify-center text-white font-headline font-black text-xl shadow-lg">
+                                                    <div className="w-12 h-12 flex items-center justify-center text-secondary font-headline font-black text-xl">
                                                         {firm.initials}
                                                     </div>
                                                     <div>
@@ -270,8 +270,8 @@ const UserProfile = () => {
                                 <div className="bg-gradient-satin text-on-primary p-12 rounded-[2.5rem] shadow-clinical-hover border border-white/5 relative overflow-hidden group">
                                     <div className="absolute inset-0 bg-dot-pattern opacity-10 pointer-events-none"></div>
                                     <div className="flex items-center gap-4 mb-10 relative z-10">
-                                        <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-md">
-                                            <Icon name="shield_lock" size={22} className="text-secondary-container" />
+                                        <div className="flex items-center justify-center">
+                                            <Icon name="shield_lock" size={24} className="text-secondary-container" />
                                         </div>
                                         <h3 className="font-headline text-xl font-bold tracking-tight">Access Node</h3>
                                     </div>
@@ -303,7 +303,7 @@ const UserProfile = () => {
                                 {/*  Notification Preferences  */}
                                 <div className="bg-white p-12 rounded-[2.5rem] border border-clinical shadow-sm space-y-10">
                                     <div className="flex items-center gap-4">
-                                        <Icon name="notifications" size={24} className="text-secondary" />
+                                        <Icon name="notifications" size={28} className="text-secondary" />
                                         <h3 className="font-headline text-xl font-black text-primary tracking-tight">Alert Node</h3>
                                     </div>
                                     <div className="space-y-8">
@@ -316,7 +316,7 @@ const UserProfile = () => {
                                                     className="sr-only peer" 
                                                     type="checkbox"
                                                 />
-                                                <div className="w-14 h-7 bg-surface-container-low rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-[20px] after:w-[20px] after:transition-all peer-checked:bg-primary shadow-inner border border-clinical/10"></div>
+                                                <div className="w-14 h-7 bg-surface-container-low rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-[20px] after:w-[20px] after:transition-all peer-checked:bg-primary shadow-inner"></div>
                                             </div>
                                         </label>
                                         <label className="flex items-center justify-between cursor-pointer group/toggle">
@@ -328,7 +328,7 @@ const UserProfile = () => {
                                                     className="sr-only peer" 
                                                     type="checkbox"
                                                 />
-                                                <div className="w-14 h-7 bg-surface-container-low rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-[20px] after:w-[20px] after:transition-all peer-checked:bg-primary shadow-inner border border-clinical/10"></div>
+                                                <div className="w-14 h-7 bg-surface-container-low rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-[20px] after:w-[20px] after:transition-all peer-checked:bg-primary shadow-inner"></div>
                                             </div>
                                         </label>
                                         <label className="flex items-center justify-between cursor-pointer group/toggle">
@@ -340,7 +340,7 @@ const UserProfile = () => {
                                                     className="sr-only peer" 
                                                     type="checkbox"
                                                 />
-                                                <div className="w-14 h-7 bg-surface-container-low rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-[20px] after:w-[20px] after:transition-all peer-checked:bg-primary shadow-inner border border-clinical/10"></div>
+                                                <div className="w-14 h-7 bg-surface-container-low rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:rounded-full after:h-[20px] after:w-[20px] after:transition-all peer-checked:bg-primary shadow-inner"></div>
                                             </div>
                                         </label>
                                     </div>

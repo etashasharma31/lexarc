@@ -28,9 +28,7 @@ const AiAssistant = () => {
                 <header className="flex justify-between items-center h-20 px-12 border-b border-clinical bg-white/10 backdrop-blur-md sticky top-0 z-40">
                     <div className="flex items-center gap-6">
                         <div className="flex items-center gap-4">
-                            <div className="w-8 h-8 bg-primary flex items-center justify-center rounded-sm shadow-clinical">
-                                <Icon name="smart_toy" size={18} className="text-white" />
-                            </div>
+                            <Icon name="smart_toy" size={24} className="text-primary" />
                             <h2 className="text-xl font-bold font-headline text-primary tracking-tighter">LegalSite AI</h2>
                         </div>
                         <div className="h-4 w-px bg-clinical"></div>
@@ -56,9 +54,7 @@ const AiAssistant = () => {
                             
                             {/*  AI Welcome Message  */}
                             <div className="flex gap-8 max-w-[1200px] animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                                <div className="w-12 h-12 rounded-sm bg-primary flex items-center justify-center flex-shrink-0 shadow-clinical border border-clinical">
-                                    <Icon name="psychology" size={24} className="text-white" />
-                                </div>
+                                <Icon name="psychology" size={32} className="text-primary" />
                                 <div className="space-y-6 flex-1">
                                     <div className="bg-white border border-clinical p-8 rounded-sm shadow-clinical-hover relative overflow-hidden group">
                                         <div className="absolute inset-0 bg-dot-pattern opacity-5"></div>
@@ -90,9 +86,7 @@ const AiAssistant = () => {
 
                             {/*  User Message Mockup  */}
                             <div className="flex gap-8 max-w-[1200px] ml-auto flex-row-reverse animate-in fade-in slide-in-from-bottom-8 duration-700">
-                                <div className="w-12 h-12 rounded-sm bg-primary/[0.03] border border-clinical flex items-center justify-center flex-shrink-0">
-                                    <Icon name="person" size={24} className="text-primary/30" />
-                                </div>
+                                <Icon name="person" size={32} className="text-primary/30" />
                                 <div className="bg-primary text-white p-8 rounded-sm shadow-clinical relative overflow-hidden group">
                                     <div className="absolute inset-0 bg-white/5 opacity-50 group-hover:opacity-100 transition-opacity"></div>
                                     <p className="text-sm font-bold tracking-tight relative z-10 leading-relaxed">Summarize the structural updates to the California Consumer Privacy Act regarding sensitive personal nodes.</p>
@@ -101,9 +95,7 @@ const AiAssistant = () => {
 
                             {/*  AI Detailed Response  */}
                             <div className="flex gap-8 max-w-[1200px] animate-in fade-in slide-in-from-bottom-8 duration-1000">
-                                <div className="w-12 h-12 rounded-sm bg-primary flex items-center justify-center flex-shrink-0 shadow-clinical border border-clinical">
-                                    <Icon name="psychology" size={24} className="text-white" />
-                                </div>
+                                <Icon name="psychology" size={32} className="text-primary" />
                                 <div className="space-y-6 flex-1">
                                     <div className="bg-white border border-clinical p-8 rounded-sm shadow-clinical-hover italic">
                                         <p className="text-sm text-primary/70 leading-relaxed mb-6">
@@ -124,10 +116,10 @@ const AiAssistant = () => {
                                         <div className="mt-8 pt-6 border-t border-clinical">
                                             <p className="text-[10px] font-bold text-primary/20 uppercase tracking-[0.2em] mb-4">REFERENTIAL SOURCES</p>
                                             <div className="flex flex-wrap gap-3">
-                                                <span className="px-3 py-1 bg-primary/[0.03] border border-clinical text-primary text-[9px] font-bold rounded-sm flex items-center gap-2">
+                                                <span className="px-0 py-1 text-primary text-[9px] font-bold flex items-center gap-2">
                                                     <Icon name="menu_book" size={12} className="text-secondary" /> CAL. CIV. CODE § 1798.100
                                                 </span>
-                                                <span className="px-3 py-1 bg-primary/[0.03] border border-clinical text-primary text-[9px] font-bold rounded-sm flex items-center gap-2">
+                                                <span className="px-0 py-1 text-primary text-[9px] font-bold flex items-center gap-2">
                                                     <Icon name="menu_book" size={12} className="text-secondary" /> CPRA STRATEGIC DOC v3
                                                 </span>
                                             </div>

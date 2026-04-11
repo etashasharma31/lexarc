@@ -9,7 +9,7 @@ const Home = () => {
       <section className="relative min-h-[921px] flex items-center overflow-hidden bg-surface bg-dot-pattern">
         <div className="max-w-[1200px] mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 z-10">
-            <span className="inline-block px-3 py-1 bg-transparent border border-secondary/30 text-secondary text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6">Institutional Legal Strategy</span>
+            <span className="inline-block px-0 py-1 text-secondary text-[10px] font-bold tracking-[0.2em] uppercase mb-6">Institutional Legal Strategy</span>
             <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary leading-[1.1] tracking-tight mb-8">
               Platform for all your <br />
               <span className="text-secondary">legal protocols.</span>
@@ -62,8 +62,8 @@ const Home = () => {
               <h3 className="font-headline text-2xl font-bold mb-4">Corporate Governance</h3>
               <p className="text-on-surface-variant mb-8 max-w-md">Master the complexities of board management, shareholder relations, and regulatory compliance with our structured frameworks.</p>
               <div className="flex gap-2">
-                <span className="px-3 py-1 bg-transparent border border-clinical/10 text-on-surface-variant text-[10px] font-bold uppercase rounded-sm">Compliance</span>
-                <span className="px-3 py-1 bg-transparent border border-clinical/10 text-on-surface-variant text-[10px] font-bold uppercase rounded-sm">Board Ops</span>
+                <span className="text-on-surface-variant text-[10px] font-bold uppercase">Compliance</span>
+                <span className="text-on-surface-variant text-[10px] font-bold uppercase">Board Ops</span>
               </div>
             </div>
             {/* Bento Item 2 */}
@@ -113,18 +113,13 @@ const Home = () => {
               { id: '03', title: 'Processing', desc: 'Our strategic protocols and AI work in tandem for precision results.', icon: 'protocol' },
               { id: '04', title: 'Track Progress', desc: 'Real-time updates on your enterprise legal health.', icon: 'analytics' }
             ].map((step, idx) => (
-              <div key={idx} className="relative p-8 bg-white border border-clinical shadow-clinical rounded-sm group hover:bg-primary hover:shadow-clinical-hover transition-all duration-500 overflow-hidden">
-                <span className="text-6xl font-headline font-black text-primary/[0.03] absolute -top-2 -right-2 group-hover:text-white/[0.05] transition-colors">{step.id}</span>
-                <div className="w-12 h-12 border border-primary/20 rounded-sm flex items-center justify-center mb-6 group-hover:border-white/40 transition-colors">
-                  <Icon name={step.icon} size={24} className="text-primary group-hover:text-on-primary" />
+              <div key={idx} className="relative p-8">
+                <span className="text-6xl font-headline font-black text-primary/[0.03] absolute -top-2 -right-2 transition-colors">{step.id}</span>
+                <div className="mb-6 transition-colors">
+                  <Icon name={step.icon} size={32} className="text-primary" />
                 </div>
-                <h3 className="font-headline text-xl font-bold mb-4 group-hover:text-on-primary">{step.title}</h3>
-                <p className="text-on-surface-variant text-sm group-hover:text-on-primary/80 transition-colors leading-relaxed">{step.desc}</p>
-                {idx < 3 && (
-                  <div className="hidden md:block absolute top-1/2 -right-2 translate-x-1/2 translate-y-[-50%] z-10">
-                    <Icon name="chevron_right" size={20} className="text-outline-variant" />
-                  </div>
-                )}
+                <h3 className="font-headline text-xl font-bold mb-4">{step.title}</h3>
+                <p className="text-on-surface-variant text-sm transition-colors leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>

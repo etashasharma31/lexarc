@@ -70,11 +70,11 @@ function RealTemplateCard({ tmpl }) {
             <div className="px-7 pt-6 pb-5 relative">
                 <div className="absolute top-0 left-0 right-0 h-1 rounded-t-sm" style={{ backgroundColor: tmpl.accentColor }} />
                 <div className="flex items-start justify-between mb-5">
-                    <div className="w-12 h-12 rounded-sm flex items-center justify-center border border-clinical/10 bg-transparent">
-                        <Icon name={tmpl.icon} size={24} style={{ color: tmpl.accentColor }} />
+                    <div className="flex items-center justify-center">
+                        <Icon name={tmpl.icon} size={32} style={{ color: tmpl.accentColor }} />
                     </div>
                     <div className="flex flex-col items-end gap-1">
-                        <span className={`text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-sm ${complexityBadge[tmpl.complexity]}`}>
+                        <span className={`text-[9px] font-bold uppercase tracking-widest px-0 py-0.5 ${complexityBadge[tmpl.complexity]}`}>
                             {tmpl.complexity}
                         </span>
                         <span className="text-[9px] font-bold uppercase tracking-widest text-slate-400">{tmpl.category}</span>
@@ -89,7 +89,7 @@ function RealTemplateCard({ tmpl }) {
             {/* Tags */}
             <div className="px-7 pb-5 flex flex-wrap gap-1.5">
                 {tmpl.tags.map(tag => (
-                    <span key={tag} className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm border border-clinical/10" style={{ color: tmpl.accentColor }}>
+                    <span key={tag} className="text-[10px] font-bold uppercase tracking-wider px-0 py-0.5" style={{ color: tmpl.accentColor }}>
                         {tag}
                     </span>
                 ))}
@@ -123,8 +123,8 @@ function PlaceholderCard({ tmpl }) {
     return (
         <div className="group bg-white p-7 border border-clinical shadow-clinical hover:shadow-clinical-hover transition-all flex flex-col h-full relative overflow-hidden rounded-sm">
             <div className="flex justify-between items-start mb-7">
-                <div className="p-3 bg-surface-container-low rounded-sm group-hover:bg-primary transition-colors">
-                    <Icon name={tmpl.icon} size={20} className="text-primary group-hover:text-white transition-colors" />
+                <div className="flex items-center justify-center text-primary group-hover:text-secondary-fixed transition-colors">
+                    <Icon name={tmpl.icon} size={28} />
                 </div>
                 <span className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">{tmpl.id}</span>
             </div>
@@ -132,8 +132,8 @@ function PlaceholderCard({ tmpl }) {
                 {tmpl.name}
             </h3>
             <div className="flex flex-wrap gap-2 mb-5">
-                <span className="px-2 py-0.5 border border-clinical/10 text-on-surface-variant text-[9px] font-bold uppercase rounded-sm">{tmpl.category}</span>
-                <span className={`px-2 py-0.5 text-[9px] font-bold uppercase rounded-sm border ${complexityBadge[tmpl.complexity]}`}>{tmpl.complexity}</span>
+                <span className="text-on-surface-variant text-[9px] font-bold uppercase">{tmpl.category}</span>
+                <span className={`text-[9px] font-bold uppercase ${complexityBadge[tmpl.complexity]}`}>{tmpl.complexity}</span>
             </div>
             <button className="mt-auto flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-primary hover:text-secondary transition-colors">
                 Download Asset <Icon name="download" size={14} />

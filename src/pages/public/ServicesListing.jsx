@@ -274,8 +274,8 @@ const ServicesListing = () => {
                                                     onClick={() => handleDocInteraction(doc)}
                                                     className="w-full text-left bg-white p-6 rounded-sm shadow-clinical border border-clinical hover:shadow-clinical-hover hover:border-secondary transition-all group flex items-center gap-6"
                                                 >
-                                                    <div className="w-12 h-12 bg-transparent flex items-center justify-center rounded-sm text-primary group-hover:bg-primary group-hover:text-white transition-all">
-                                                        <Icon name={doc.icon} size={24} />
+                                                    <div className="flex items-center justify-center text-primary transition-all">
+                                                        <Icon name={doc.icon} size={32} />
                                                     </div>
                                                     <div className="flex-1">
                                                         <div className="flex items-center gap-3 mb-1">
@@ -421,8 +421,8 @@ const ServicesListing = () => {
                                 {filteredServices.map((service) => (
                                     <div key={service.id} className="group bg-white rounded-sm p-8 transition-all shadow-clinical border border-clinical hover:shadow-clinical-hover flex flex-col items-start animate-in fade-in slide-in-from-bottom-4 duration-500 hover:-translate-y-1 relative overflow-hidden">
                                         <div className="absolute top-0 right-0 w-24 h-24 bg-primary/[0.02] -mr-12 -mt-12 rounded-full blur-xl group-hover:bg-primary/[0.05] transition-colors"></div>
-                                        <div className="w-12 h-12 bg-primary/[0.03] flex items-center justify-center rounded-sm mb-6 group-hover:bg-primary transition-colors duration-300">
-                                            <Icon name={service.icon} size={24} className="text-primary group-hover:text-white" />
+                                        <div className="flex items-center justify-center mb-6 text-primary group-hover:text-secondary-fixed transition-colors duration-300">
+                                            <Icon name={service.icon} size={32} />
                                         </div>
                                         <h2 className="font-headline text-xl font-bold mb-4">{service.title}</h2>
                                         <p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">{service.description}</p>
