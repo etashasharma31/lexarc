@@ -672,6 +672,293 @@ const GUIDES = {
       { slug: 'digital-privacy-act-2024-framework', title: 'Digital Privacy Act: 2024 Framework', category: 'Compliance' }
     ]
   },
+
+  'pvt-ltd-incorporation': {
+    title: 'Incorporating a Private Limited Company in India',
+    subtitle: 'A foundational walkthrough of the MCA V3 portal registration, DIN filing, and constitutional drafting for Indian startups.',
+    category: 'Corporate',
+    readTime: '10 min',
+    publishedDate: 'April 5, 2024',
+    updatedDate: 'April 11, 2024',
+    author: {
+      name: 'Elena Volkov',
+      title: 'Senior Partner, Data Governance',
+      firm: 'LexArchitect Advisory',
+      bio: 'Elena specializes in corporate formation and governance architecture for tech-driven enterprises in the Indian market.',
+      initials: 'EV',
+      accentColor: '#1e4d8c',
+    },
+    tags: ['Companies Act 2013', 'MCA V3', 'SPICe+', 'Pvt Ltd', 'Digital Signatures'],
+    heroGradient: 'from-[#00152a] via-[#0a2744] to-[#1e4d8c]',
+    accentColor: '#1e4d8c',
+    sections: [
+      {
+        id: 'overview',
+        title: 'The Incorporation Lifecycle',
+        icon: 'apartment',
+        content: [
+          {
+            type: 'paragraph',
+            text: 'Incorporating a Private Limited Company is the most robust way to build a scalable business in India. It provides limited liability protection, a distinct legal identity, and the ability to raise institutional capital through equity issuance.'
+          },
+          {
+            type: 'phases',
+            items: [
+              {
+                phase: 'Filing 1',
+                title: 'DSC & DIN Issuance',
+                duration: '1-2 Days',
+                steps: ['Apply for Class 3 Digital Signature Certificate (DSC)', 'Obtain Director Identification Number (DIN) for all proposed directors']
+              },
+              {
+                phase: 'Filing 2',
+                title: 'RUN Name Approval',
+                duration: '2-3 Days',
+                steps: ['File Reserve Unique Name (RUN) application with MCA', 'Ensure name compliance with Rule 8 of Company Incorporation Rules']
+              },
+              {
+                phase: 'Filing 3',
+                title: 'SPICe+ Registration',
+                duration: '3-5 Days',
+                steps: ['Draft MoA and AoA via e-forms INC-33 and INC-34', 'Submit integrated SPICe+ form for PAN and TAN issuance']
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    takeaways: [
+      'Pvt Ltd offers the best structure for raising venture capital.',
+      'A minimum of 2 directors and 2 shareholders is required.',
+      'Class 3 DSC is mandatory for all electronic filings on the MCA portal.',
+    ],
+    relatedGuides: [
+      { slug: 'esop-guide', title: 'ESOP Guide for Indian Startups', category: 'Employment & Equity' },
+      { slug: 'strategizing-your-series-a', title: 'Strategizing Your Series A', category: 'Investment' }
+    ]
+  },
+
+  'esop-guide': {
+    title: 'ESOP Guide for Indian Startups',
+    subtitle: 'Designing equity-based compensation structures that align founder and employee interests under Indian regulatory frameworks.',
+    category: 'Employment & Equity',
+    readTime: '15 min',
+    publishedDate: 'January 10, 2024',
+    updatedDate: 'April 1, 2024',
+    author: {
+      name: 'Dr. Alistair Thorne',
+      title: 'Managing Partner, Capital Markets',
+      firm: 'LexArchitect Advisory',
+      bio: 'Dr. Thorne has structured employee equity pools for over 100 Indian startups, from seed to pre-IPO stages.',
+      initials: 'AT',
+      accentColor: '#7c3aed',
+    },
+    tags: ['Equity', 'Employee Stock Options', 'Vesting', 'Income Tax', 'SEBI'],
+    heroGradient: 'from-[#1e0a3c] via-[#3b1f6b] to-[#7c3aed]',
+    accentColor: '#7c3aed',
+    sections: [
+      {
+        id: 'overview',
+        title: 'Equity Alignment Strategy',
+        icon: 'pie_chart',
+        content: [
+          {
+            type: 'paragraph',
+            text: 'Employee Stock Option Plans (ESOPs) are critical for attracting top-tier talent in the competitive Indian tech landscape. They provide a mechanism for employees to participate in the value creation they help drive.'
+          },
+          {
+            type: 'list',
+            style: 'numbered',
+            heading: 'Key Structural Elements',
+            items: [
+              'ESOP Pool Sizing: Typically 10-15% of the fully diluted cap table.',
+              'Vesting Schedule: Standard 4-year vesting with a 1-year cliff.',
+              'Exercise Price: The strike price at which options convert to equity.',
+              'Tax Implications: Perquisite tax at exercise and Capital Gains at sale.'
+            ]
+          }
+        ]
+      }
+    ],
+    takeaways: [
+      'Grant letters must clearly define vesting and exercise protocols.',
+      'Options are taxed as perquisites at the time of exercise based on FMV.',
+      'A 1-year cliff is standard to ensure long-term alignment.',
+    ],
+    relatedGuides: [
+      { slug: 'strategizing-your-series-a', title: 'Strategizing Your Series A', category: 'Investment' },
+      { slug: 'pvt-ltd-incorporation', title: 'Incorporating a Pvt Ltd', category: 'Corporate' }
+    ]
+  },
+
+  'gst-audit': {
+    title: 'GST Compliance Audit Checklist',
+    subtitle: 'Internal protocols for reconciling GSTR-2B with GSTR-3B and maintaining a clean compliance record for GST scrutiny.',
+    category: 'Taxation',
+    readTime: '20 min',
+    publishedDate: 'January 25, 2024',
+    updatedDate: 'March 15, 2024',
+    author: {
+      name: 'Marcus Sterling',
+      title: 'Head of IP & Technology Law',
+      firm: 'LexArchitect Advisory',
+      bio: 'Marcus oversees multi-jurisdictional compliance audits for high-growth enterprises.',
+      initials: 'MS',
+      accentColor: '#065f46',
+    },
+    tags: ['GST', 'Compliance', 'Audit', 'Taxation', 'Reconciliation'],
+    heroGradient: 'from-[#022c22] via-[#064e3b] to-[#065f46]',
+    accentColor: '#065f46',
+    sections: [
+      {
+        id: 'overview',
+        title: 'The Audit Protocol',
+        icon: 'fact_check',
+        content: [
+          {
+            type: 'paragraph',
+            text: 'GST readiness is about continuous reconciliation. Discrepancies between input tax credits (ITC) claimed and supplier filings are the primary cause of GST scrutiny notices.'
+          },
+          {
+            type: 'grid',
+            items: [
+              { icon: 'receipt_long', title: 'Inward Supplies', text: 'Verify all purchase invoices against GSTR-2B reflected on the portal.' },
+              { icon: 'description', title: 'Outward Supplies', text: 'Ensure GSTR-1 sales data matches your ledger exactly.' },
+              { icon: 'payments', title: 'Payment Liability', text: 'Calculate final liability after ITC adjustment in GSTR-3B.' },
+              { icon: 'verified', title: 'Annual Return', text: 'Reconcile monthly filings with the Annual Return (GSTR-9).' }
+            ]
+          }
+        ]
+      }
+    ],
+    takeaways: [
+      'ITC can only be claimed if reflected in the supplier\'s GSTR-1.',
+      'E-invoicing is mandatory for entities exceeding specified turnover thresholds.',
+      'Maintain an internal audit log of all reconciliation adjustments.',
+    ],
+    relatedGuides: [
+      { slug: 'companies-act-annual-return', title: 'Companies Act Annual Return', category: 'Compliance' },
+      { slug: 'digital-privacy-act-2024-framework', title: 'Digital Privacy Act', category: 'Compliance' }
+    ]
+  },
+
+  'companies-act-annual-return': {
+    title: 'Companies Act 2013 — Annual Return Filing',
+    subtitle: 'Section 92 compliance: A comprehensive guide to filing MGT-7 and avoiding MCA penalties for late disclosure.',
+    category: 'Compliance',
+    readTime: '15 min',
+    publishedDate: 'October 10, 2023',
+    updatedDate: 'April 5, 2024',
+    author: {
+      name: 'Alistair Thorne',
+      title: 'Managing Partner, Capital Markets',
+      firm: 'LexArchitect Advisory',
+      bio: 'Alistair advises boards on statutory disclosure and corporate secretarial excellence.',
+      initials: 'AT',
+      accentColor: '#92400e',
+    },
+    tags: ['ROC', 'MGT-7', 'Annual Return', 'Compliance', 'Penalty Matrix'],
+    heroGradient: 'from-[#1c0a00] via-[#451a03] to-[#92400e]',
+    accentColor: '#92400e',
+    sections: [
+      {
+        id: 'overview',
+        title: 'Statutory Disclosure Matrix',
+        icon: 'assignment_turned_in',
+        content: [
+          {
+            type: 'paragraph',
+            text: 'Filing the Annual Return (MGT-7) is a mandatory requirement for all companies under Section 92 of the Companies Act 2013. It provides the Registrar of Companies (ROC) with a detailed snapshot of the company\'s shareholding and governance at the close of the financial year.'
+          },
+          {
+            type: 'list',
+            style: 'bullet',
+            heading: 'Key Filing Requirements',
+            items: [
+              'Data on shareholding patterns and changes during the financial year.',
+              'Indebtedness details and registered charges.',
+              'Promoter and director details including remuneration.',
+              'Certification by a practicing Company Secretary for large entities.'
+            ]
+          }
+        ]
+      }
+    ],
+    takeaways: [
+      'MGT-7 must be filed within 60 days of the Annual General Meeting (AGM).',
+      'The penalty for late filing is ₹100 per day of delay.',
+      'Accuracy in shareholding data is critical to avoid compounding of offences.',
+    ],
+    relatedGuides: [
+      { slug: 'modern-boardroom-protocol', title: 'The Modern Boardroom Protocol', category: 'Governance' },
+      { slug: 'gst-audit', title: 'GST Compliance Audit Checklist', category: 'Taxation' }
+    ]
+  },
+
+  'dpiit-recognition': {
+    title: 'Startup India DPIIT Recognition Guide',
+    subtitle: 'Navigating the Startup India portal to secure DPIIT recognition, tax benefits, and regulatory exemptions.',
+    category: 'Startup',
+    readTime: '12 min',
+    publishedDate: 'March 1, 2024',
+    updatedDate: 'April 11, 2024',
+    author: {
+      name: 'Elena Volkov',
+      title: 'Senior Partner, Data Governance',
+      firm: 'LexArchitect Advisory',
+      bio: 'Elena leads our startup acceleration desk, focusing on non-dilutive funding and regulatory recognition.',
+      initials: 'EV',
+      accentColor: '#b45309',
+    },
+    tags: ['Startup India', 'DPIIT', '80-IAC', 'Tax Exemption', 'Self-Certification'],
+    heroGradient: 'from-[#2e1c0c] via-[#78350f] to-[#b45309]',
+    accentColor: '#b45309',
+    sections: [
+      {
+        id: 'overview',
+        title: 'The Startup Advantage',
+        icon: 'rocket_launch',
+        content: [
+          {
+            type: 'paragraph',
+            text: 'DPIIT recognition is the gateway for Indian startups to access the government\'s flagship benefits, including tax holidays, self-certification for labor laws, and fast-track patent processing.'
+          },
+          {
+            type: 'phases',
+            items: [
+              {
+                phase: 'Step 1',
+                title: 'Portal Registration',
+                duration: '1 Day',
+                steps: ['Register on the Startup India portal with business details', 'Upload Certificate of Incorporation and innovation write-up']
+              },
+              {
+                phase: 'Step 2',
+                title: 'Innovation Assessment',
+                duration: '10-15 Days',
+                steps: ['Demonstrate innovation or improvement of existing processes', 'Submit supporting documents like pitch decks or patent filings']
+              },
+              {
+                phase: 'Step 3',
+                title: 'Benefit Application',
+                duration: '30+ Days',
+                steps: ['Apply for Section 80-IAC tax exemption', 'Utilize self-certification for EPF and Gratuity compliance']
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    takeaways: [
+      'Entities must be less than 10 years old from the date of incorporation.',
+      'The company must not be a result of splitting up or reconstruction of an existing business.',
+      '80-IAC provides a tax holiday for 3 consecutive years out of 10.',
+    ],
+    relatedGuides: [
+      { slug: 'strategizing-your-series-a', title: 'Strategizing Your Series A', category: 'Investment' },
+      { slug: 'pvt-ltd-incorporation', title: 'Incorporating a Pvt Ltd', category: 'Corporate' }
+    ]
+  },
 };
 
 /* ─────────────────────────────────────────────

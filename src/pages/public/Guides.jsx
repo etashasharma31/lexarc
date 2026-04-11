@@ -256,9 +256,9 @@ function HowToCard({ guide }) {
                     <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">{guide.metaLabel}</p>
                     <p className="text-xs font-semibold text-slate-700 mt-0.5">{guide.meta}</p>
                 </div>
-                <button className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest group-hover:translate-x-1 transition-transform" style={{ color: guide.accentColor }}>
+                <Link to={`/guides/${guide.id}`} className="inline-flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest group-hover:translate-x-1 transition-transform" style={{ color: guide.accentColor }}>
                     View Guide <Icon name="arrow_forward" size={13} />
-                </button>
+                </Link>
             </div>
         </div>
     );
@@ -275,7 +275,7 @@ const Guides = () => {
                 {/* Header */}
                 <div className="mb-12">
                     <span className="text-[10px] font-bold text-secondary uppercase tracking-[0.2em] mb-4 block">Intelligence Portfolio</span>
-                    <h1 className="text-5xl font-headline font-bold text-primary tracking-tight mb-6 italic">Legal Guides</h1>
+                    <h1 className="text-5xl font-headline font-bold text-primary tracking-tight mb-6">Legal Guides</h1>
                     <p className="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
                         Deep-dive analyses and practical how-to guides covering the most critical legal challenges for modern enterprise leaders.
                     </p>
