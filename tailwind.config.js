@@ -1,0 +1,73 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary": "#44617d",
+        "secondary-container": "#bfddfe",
+        "tertiary": "#001529",
+        "primary-fixed-dim": "#b0c9e8",
+        "outline-variant": "#c3c6ce",
+        "tertiary-container": "#122a41",
+        "on-tertiary-fixed": "#021d33",
+        "surface-container-low": "#f0f4f8",
+        "on-surface": "#171c1f",
+        "primary-container": "#102a43",
+        "inverse-surface": "#2c3134",
+        "on-tertiary-container": "#7b92ad",
+        "on-tertiary": "#ffffff",
+        "surface-dim": "#d6dade",
+        "primary": "#00152a",
+        "surface-container-high": "#e4e9ed",
+        "on-primary-fixed": "#011d35",
+        "outline": "#74777e",
+        "surface-variant": "#dfe3e7",
+        "on-surface-variant": "#43474d",
+        "inverse-on-surface": "#edf1f5",
+        "tertiary-fixed": "#d0e4ff",
+        "surface-container-highest": "#dfe3e7",
+        "inverse-primary": "#b0c9e8",
+        "error": "#ba1a1a",
+        "surface": "#f6fafe",
+        "secondary-fixed-dim": "#accaea",
+        "on-primary": "#ffffff",
+        "on-error": "#ffffff",
+        "background": "#f6fafe",
+        "on-secondary": "#ffffff",
+        "error-container": "#ffdad6",
+        "on-background": "#171c1f",
+        "primary-fixed": "#d1e4ff",
+        "on-tertiary-fixed-variant": "#324861",
+        "on-secondary-fixed": "#001d33",
+        "surface-tint": "#49607c",
+        "on-secondary-container": "#45627e",
+        "surface-bright": "#f6fafe",
+        "secondary-fixed": "#cee5ff",
+        "surface-container": "#eaeef2",
+        "on-primary-fixed-variant": "#314863",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary-fixed-variant": "#2c4964",
+        "tertiary-fixed-dim": "#b1c9e6",
+        "on-primary-container": "#7a92b0",
+        "on-error-container": "#93000a"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "fontFamily": {
+        "headline": ["Manrope", "Inter", "system-ui", "-apple-system", "sans-serif"],
+        "body": ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        "label": ["Inter", "system-ui", "-apple-system", "sans-serif"]
+      }
+    },
+  },
+  plugins: [],
+}
