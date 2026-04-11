@@ -353,20 +353,7 @@ const UserProfile = () => {
                             </aside>
                         </div>
 
-                        {/*  Footer Structural Detail  */}
-                        <footer className="pt-24 pb-12 border-t border-clinical">
-                            <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-                                <div className="space-y-2">
-                                    <p className="font-headline font-black text-2xl text-primary tracking-tighter">LegalSite <span className="text-secondary">Profile</span></p>
-                                    <p className="text-[10px] text-primary/30 font-bold uppercase tracking-[0.3em]">Compliance Protocol Integrated v4.2.0</p>
-                                </div>
-                                <div className="flex gap-10 text-[9px] font-black uppercase tracking-[0.2em] text-primary/40">
-                                    <a className="hover:text-primary transition-colors cursor-pointer" href="#">Identity Vault</a>
-                                    <a className="hover:text-primary transition-colors cursor-pointer" href="#">Terms of Protocol</a>
-                                    <a className="hover:text-primary transition-colors cursor-pointer" href="#">Security Audit</a>
-                                </div>
-                            </div>
-                        </footer>
+
                     </div>
                 </div>
             </main>
