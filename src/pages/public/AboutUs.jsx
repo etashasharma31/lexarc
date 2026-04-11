@@ -16,7 +16,7 @@ const AboutUs = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#00152a]"></div>
                 </div>
                 <div className="max-w-[1200px] mx-auto px-8 w-full relative z-10 text-center">
-                    <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6">Our Legacy</span>
+                    <span className="inline-block px-3 py-1 bg-transparent border border-secondary/30 text-secondary text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6">Our Legacy</span>
                     <h1 className="font-headline text-5xl md:text-7xl font-bold text-white leading-tight tracking-tighter mb-8">
                         Building the <br />
                         <span className="text-secondary-fixed-dim">Future of Justice.</span>
