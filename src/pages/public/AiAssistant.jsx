@@ -88,7 +88,7 @@ const AiAssistant = () => {
             />
             
             {/*  Main Content Area  */}
-            <main className="flex-1 ml-64 flex flex-col h-screen relative bg-dot-pattern">
+            <main className="flex-1 flex flex-col h-screen relative bg-dot-pattern">
                 {/*  TopAppBar  */}
                 <header className="flex justify-between items-center h-20 px-12 border-b border-clinical bg-white/10 backdrop-blur-md sticky top-0 z-40">
                     <div className="flex items-center gap-6">
