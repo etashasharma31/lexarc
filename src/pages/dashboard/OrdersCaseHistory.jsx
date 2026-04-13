@@ -60,7 +60,7 @@ const OrdersCaseHistory = () => {
                         {/*  Bento-ish Grid Layout  */}
                         <div className="grid grid-cols-1 gap-6">
                             {/*  Order Card 1: Action Required  */}
-                            <div className="bg-white p-8 flex flex-col md:flex-row items-center gap-8 border-l-4 border-error shadow-clinical hover:shadow-clinical-hover transition-all duration-300 relative overflow-hidden group">>
+                            <div className="bg-white p-8 flex flex-col md:flex-row items-center gap-8 border-l-4 border-error shadow-clinical hover:shadow-clinical-hover transition-all duration-300 relative overflow-hidden group">
                                 <div className="absolute top-0 right-0 p-4 opacity-[0.02] group-hover:rotate-12 transition-transform">
                                     <Icon name="gavel" size={64} />
                                 </div>

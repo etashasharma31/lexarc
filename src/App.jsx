@@ -27,7 +27,6 @@ import ResourceLibrary from './pages/public/ResourceLibrary';
 import ReviewsTestimonials from './pages/public/ReviewsTestimonials';
 import SearchResults from './pages/public/SearchResults';
 import ServicesListing from './pages/public/ServicesListing';
-import ServiceDetailBusinessReg from './pages/public/ServiceDetailBusinessReg';
 import TermsConditions from './pages/public/TermsConditions';
 import UserDashboard from './pages/dashboard/UserDashboard';
 import UserProfile from './pages/public/UserProfile';
@@ -41,6 +40,12 @@ import GuideAnalysis from './pages/public/GuideAnalysis';
 import Statutes from './pages/public/Statutes';
 import Status from './pages/public/Status';
 import TemplateDetail from './pages/public/TemplateDetail';
+import LawyerCases from './pages/dashboard/LawyerCases';
+import LawyerCalendar from './pages/dashboard/LawyerCalendar';
+import AdminFirms from './pages/dashboard/AdminFirms';
+import AdminCompliance from './pages/dashboard/AdminCompliance';
+import AdminAnalytics from './pages/dashboard/AdminAnalytics';
+import AdminHealth from './pages/dashboard/AdminHealth';
 
 import DocumentUploadProtocol from './pages/dashboard/DocumentUploadProtocol';
 
@@ -52,6 +57,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/404-error-page" element={<ErrorPage404 />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
+          <Route path="/admin-firms" element={<AdminFirms />} />
+          <Route path="/admin-compliance" element={<AdminCompliance />} />
+          <Route path="/admin-analytics" element={<AdminAnalytics />} />
+          <Route path="/admin-health" element={<AdminHealth />} />
           <Route path="/checkout-confirmation" element={<CheckoutConfirmation />} />
           <Route path="/checkout-payment-methods-updated" element={<CheckoutPaymentMethodsUpdated />} />
           <Route path="/checkout-review" element={<CheckoutReview />} />
@@ -60,8 +69,8 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/document-vault" element={<DocumentVault />} />
           <Route path="/lawyer-panel-dashboard" element={<LawyerPanelDashboard />} />
-          <Route path="/lawyer-cases" element={<LawyerPanelDashboard />} />
-          <Route path="/lawyer-calendar" element={<LawyerPanelDashboard />} />
+          <Route path="/lawyer-cases" element={<LawyerCases />} />
+          <Route path="/lawyer-calendar" element={<LawyerCalendar />} />
 
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/document-audit-protocol" element={<DocumentUploadProtocol />} />
@@ -73,7 +82,6 @@ function App() {
           <Route path="/reviews-testimonials" element={<ReviewsTestimonials />} />
           <Route path="/search-results" element={<SearchResults />} />
           <Route path="/services" element={<ServicesListing />} />
-          <Route path="/service-detail-business-reg" element={<ServiceDetailBusinessReg />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/user-dashboard" element={<UserDashboard />} />
           <Route path="/resource-library" element={<ResourceLibrary />} />

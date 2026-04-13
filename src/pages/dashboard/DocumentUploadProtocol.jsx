@@ -162,13 +162,13 @@ const DocumentUploadProtocol = () => {
                             <div className="font-mono text-[11px] space-y-4 text-white/60 leading-relaxed overflow-y-auto max-h-[400px] custom-scrollbar">
                                 {auditLogs.map((log, i) => (
                                     <div key={i} className="animate-in fade-in slide-in-from-left-2 duration-300">
-                                        <span className="text-secondary font-black opacity-80 mr-3">>>></span>
+                                        <span className="text-secondary font-black opacity-80 mr-3">{">>>"}</span>
                                         {log}
                                     </div>
                                 ))}
                                 {(uploadStatus === 'UPLOADING' || uploadStatus === 'PROCESSING') && (
                                     <div className="animate-pulse flex items-center gap-2 text-secondary font-black">
-                                        <span className="mr-3">>>></span>
+                                        <span className="mr-3">{">>>"}</span>
                                         WAITING_FOR_HASH_ACKNOWLEDGMENT...
                                     </div>
                                 )}
@@ -179,7 +179,7 @@ const DocumentUploadProtocol = () => {
                             <div className="flex items-start gap-4">
                                 <Icon name="verified_user" size={20} className="text-secondary mt-1" />
                                 <div>
-                                    <h4 className="text-[10px] font-black text-primary uppercase tracking-widest mb-1 text-on-surface">Data Integrity Guarantee</h4>
+                                    <h4 className="text-[10px] font-black text-primary uppercase tracking-widest mb-1">Data Integrity Guarantee</h4>
                                     <p className="text-[10px] text-primary/40 leading-relaxed italic">
                                         All structural data is processed within jurisdictional boundaries and encrypted via AES-256 protocols before persistence.
                                     </p>

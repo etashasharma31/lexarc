@@ -20,7 +20,6 @@ const Footer = () => {
 
         {/* Links Column 1 */}
         <div className="space-y-4">
-          <Link to="/services" className={linkClass}>Corporate Law</Link>
           <Link to="/templates" className={linkClass}>Templates</Link>
           <Link to="/guides" className={linkClass}>Guides</Link>
           <Link to="/resource-library" className={linkClass}>Resource Library</Link>
