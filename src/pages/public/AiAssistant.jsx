@@ -212,7 +212,7 @@ const AiAssistant = () => {
                         </div>
 
                         {/*  Input Area  */}
-                        <div className="p-10 border-t border-clinical bg-white/50 backdrop-blur-sm">
+                        <div className="p-10 border-t border-clinical bg-white/80 backdrop-blur-md relative z-30">
                             <div className="max-w-[1200px] mx-auto relative group">
                                 {/* Staged File Preview */}
                                 {attachedFile && (
@@ -253,11 +253,11 @@ const AiAssistant = () => {
                                 <div className="absolute right-6 top-1/2 -translate-y-1/2 flex items-center gap-4">
                                     {/* Attachment Palette Menu */}
                                     {showAttachmentMenu && (
-                                        <div className="absolute bottom-16 right-0 bg-white border border-clinical shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-sm p-2 w-72 z-50 animate-in slide-in-from-bottom-4 duration-300">
-                                            <div className="p-4 border-b border-clinical mb-2">
-                                                <p className="text-[9px] font-bold text-primary/30 uppercase tracking-[0.3em]">ATTACHMENT PROTOCOL</p>
+                                        <div className="absolute bottom-20 right-0 bg-white/95 backdrop-blur-xl border border-clinical shadow-[0_30px_60px_rgba(0,0,0,0.15)] rounded-sm p-3 w-80 z-50 animate-in slide-in-from-bottom-4 duration-300">
+                                            <div className="px-4 py-3 border-b border-clinical mb-3">
+                                                <p className="text-[9px] font-black text-primary/30 uppercase tracking-[0.3em]">ATTACHMENT PROTOCOL</p>
                                             </div>
-                                            <div className="flex flex-col">
+                                            <div className="flex flex-col gap-1">
                                                 {[
                                                     { label: 'Local Node', desc: 'Secure device upload', icon: 'file_upload', action: triggerFileSelect },
                                                     { label: 'Document Vault', desc: 'Encrypted platform storage', icon: 'lock', action: () => handleSimulatedAttach('Vault_Registry_Archive.pdf') },
@@ -267,14 +267,14 @@ const AiAssistant = () => {
                                                     <button 
                                                         key={i}
                                                         onClick={opt.action}
-                                                        className="flex items-center gap-4 p-4 hover:bg-primary/[0.02] rounded-sm transition-all group text-left border-l-2 border-transparent hover:border-secondary"
+                                                        className="flex items-center gap-5 p-4 hover:bg-primary/[0.03] rounded-sm transition-all group text-left border-l-2 border-transparent hover:border-secondary"
                                                     >
-                                                        <div className="w-10 h-10 flex items-center justify-center bg-slate-50 rounded-sm text-primary/40 group-hover:text-secondary group-hover:bg-secondary/5 transition-all">
-                                                            <Icon name={opt.icon} size={20} />
+                                                        <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-slate-50 rounded-sm text-primary/40 group-hover:text-secondary group-hover:bg-secondary/5 transition-all">
+                                                            <Icon name={opt.icon} size={22} />
                                                         </div>
-                                                        <div>
-                                                            <p className="text-[10px] font-bold text-primary uppercase tracking-widest leading-none mb-1.5">{opt.label}</p>
-                                                            <p className="text-[9px] text-primary/30 font-medium uppercase tracking-[0.1em]">{opt.desc}</p>
+                                                        <div className="overflow-hidden">
+                                                            <p className="text-[11px] font-bold text-primary uppercase tracking-widest leading-tight mb-2 truncate">{opt.label}</p>
+                                                            <p className="text-[9px] text-primary/40 font-bold uppercase tracking-[0.15em] leading-snug">{opt.desc}</p>
                                                         </div>
                                                     </button>
                                                 ))}
