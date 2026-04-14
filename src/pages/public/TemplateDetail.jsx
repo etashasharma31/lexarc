@@ -72,10 +72,10 @@ const TEMPLATES = {
         ]
     },
     'TMP-001': {
-        name: 'Global NDA (Bilateral)',
+        name: 'Indian NDA (Bilateral)',
         category: 'Corporate',
         complexity: 'Foundational',
-        description: 'A versatile, cross-border Non-Disclosure Agreement for bilateral information exchange. Optimized for neutrality, it protects sensitive commercial data while maintaining standard exceptions for legal disclosure.',
+        description: 'A versatile, pan-India Non-Disclosure Agreement for bilateral information exchange. Optimized for neutrality, it protects sensitive commercial data while maintaining standard exceptions for legal disclosure.',
         downloads: '3.4k',
         format: 'DOCX',
         icon: 'description',
@@ -156,7 +156,7 @@ const TEMPLATES = {
         ]
     },
     'TMP-015': {
-        name: 'Articles of Incorporation',
+        name: 'Articles of Association (AOA)',
         category: 'Corporate',
         complexity: 'Foundational',
         description: 'The definitive constitutional document for an Indian Private Limited Company. Codifies internal management rules, share transfer restrictions, and board powers.',

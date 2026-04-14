@@ -6,10 +6,10 @@ import DashboardSidebar from '../../components/dashboard/DashboardSidebar';
 const AdminCompliance = () => {
     const menuItems = [
         { label: 'Directorate', path: '/admin-dashboard', icon: 'dashboard' },
-        { label: 'Firm Management', path: '/admin-firms', icon: 'business' },
         { label: 'Compliance Audit', path: '/admin-compliance', icon: 'verified_user' },
         { label: 'Revenue Analytics', path: '/admin-analytics', icon: 'payments' },
-        { label: 'System Health', path: '/admin-health', icon: 'dns' }
+        { label: 'System Health', path: '/admin-health', icon: 'dns' },
+        { label: 'Platform Status', path: '/status', icon: 'monitor_heart' }
     ];
 
     const auditChecklist = [

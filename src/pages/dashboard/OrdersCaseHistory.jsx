@@ -72,8 +72,8 @@ const OrdersCaseHistory = () => {
                                         <span className="border border-error/30 text-error text-[9px] font-bold px-2 py-0.5 tracking-[0.2em] rounded-sm">ACTION REQUIRED</span>
                                         <span className="text-[10px] text-on-surface-variant font-bold opacity-40">#LX-2024-8842</span>
                                     </div>
-                                    <h3 className="text-xl font-headline font-bold text-primary">Delaware Business Incorporation</h3>
-                                    <p className="text-sm text-on-surface-variant max-w-xl">Finalizing articles of organization and registered agent assignment.</p>
+                                    <h3 className="text-xl font-headline font-bold text-primary">Private Limited Registration</h3>
+                                    <p className="text-sm text-on-surface-variant max-w-xl">Finalizing Memorandum & Articles of Association (MOA & AOA) structures.</p>
                                 </div>
                                 <div className="text-right shrink-0">
                                     <p className="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest mb-4">Ordered Oct 12, 2024</p>
@@ -92,8 +92,8 @@ const OrdersCaseHistory = () => {
                                         <span className="bg-secondary text-white text-[9px] font-bold px-2 py-0.5 tracking-[0.2em] rounded-sm">PROCESSING</span>
                                         <span className="text-[10px] text-on-surface-variant font-bold opacity-40">#LX-2024-9103</span>
                                     </div>
-                                    <h3 className="text-xl font-headline font-bold text-primary">International Trademark Filing</h3>
-                                    <p className="text-sm text-on-surface-variant max-w-xl">Madrid Protocol application under review by local counsel.</p>
+                                    <h3 className="text-xl font-headline font-bold text-primary">IP India Trademark Filing</h3>
+                                    <p className="text-sm text-on-surface-variant max-w-xl">Form TM-A application under examination by the Trademarks Registry.</p>
                                 </div>
                                 <div className="text-right shrink-0">
                                     <p className="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest mb-4">Ordered Sep 28, 2024</p>
@@ -125,7 +125,7 @@ const OrdersCaseHistory = () => {
                                             </div>
                                             <div>
                                                 <p className="text-xs font-bold text-primary">Signature Due</p>
-                                                <p className="text-[10px] text-on-surface-variant uppercase tracking-widest opacity-60">Delaware Incorporation</p>
+                                                <p className="text-[10px] text-on-surface-variant uppercase tracking-widest opacity-60">Company Registration</p>
                                             </div>
                                         </li>
                                         <li className="flex gap-4">
@@ -134,8 +134,8 @@ const OrdersCaseHistory = () => {
                                                 <p className="text-[8px] font-bold text-primary/40 uppercase tracking-tighter">NOV</p>
                                             </div>
                                             <div>
-                                                <p className="text-xs font-bold text-primary">Tax ID Filing</p>
-                                                <p className="text-[10px] text-on-surface-variant uppercase tracking-widest opacity-60">Global Expansion Bundle</p>
+                                                <p className="text-xs font-bold text-primary">GST & PAN Application</p>
+                                                <p className="text-[10px] text-on-surface-variant uppercase tracking-widest opacity-60">Startup India Bundle</p>
                                             </div>
                                         </li>
                                     </ul>

@@ -5,10 +5,10 @@ import DashboardSidebar from '../../components/dashboard/DashboardSidebar';
 const AdminDashboard = () => {
     const menuItems = [
         { label: 'Directorate', path: '/admin-dashboard', icon: 'dashboard' },
-        { label: 'Firm Management', path: '/admin-firms', icon: 'business' },
         { label: 'Compliance Audit', path: '/admin-compliance', icon: 'verified_user' },
         { label: 'Revenue Analytics', path: '/admin-analytics', icon: 'payments' },
-        { label: 'System Health', path: '/admin-health', icon: 'dns' }
+        { label: 'System Health', path: '/admin-health', icon: 'dns' },
+        { label: 'Platform Status', path: '/status', icon: 'monitor_heart' }
     ];
 
     return (
@@ -165,7 +165,7 @@ const AdminDashboard = () => {
                                         <Icon name="history_edu" size={16} />
                                     </div>
                                     <p className="text-sm font-bold text-primary leading-none">Firm Registry Protocol</p>
-                                    <p className="text-[10px] text-on-surface-variant mt-2 opacity-60">Sullivan & Cromwell LLP joined the Directorate network.</p>
+                                    <p className="text-[10px] text-on-surface-variant mt-2 opacity-60">Khaitan & Co joined the Directorate network.</p>
                                     <p className="text-[9px] text-primary/30 uppercase tracking-widest font-bold mt-2">2m ago</p>
                                 </div>
                                 <div className="relative pl-10">
@@ -173,7 +173,7 @@ const AdminDashboard = () => {
                                         <Icon name="verified" size={16} />
                                     </div>
                                     <p className="text-sm font-bold text-primary leading-none">Security Cycle Complete</p>
-                                    <p className="text-[10px] text-on-surface-variant mt-2 opacity-60">Encrypted redundant archive stored in US-East-1.</p>
+                                    <p className="text-[10px] text-on-surface-variant mt-2 opacity-60">Encrypted redundant archive stored in ap-south-1 (Mumbai).</p>
                                     <p className="text-[9px] text-primary/30 uppercase tracking-widest font-bold mt-2">45m ago</p>
                                 </div>
                             </div>

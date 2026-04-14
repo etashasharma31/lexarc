@@ -35,7 +35,6 @@ const Footer = () => {
 
         {/* Links Column 3 */}
         <div className="space-y-4">
-          <Link to="/status" className={linkClass}>Platform Status</Link>
           <Link to="/privacy-policy" className={linkClass}>Privacy Policy</Link>
           <Link to="/terms-conditions" className={linkClass}>Terms of Service</Link>
           <Link to="/refund-policy" className={linkClass}>Refund Policy</Link>

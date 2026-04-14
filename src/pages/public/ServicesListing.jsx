@@ -8,7 +8,8 @@ const categories = [
     { id: 'startup', label: 'Startup India & MSME', icon: 'rocket_launch' },
     { id: 'ip-services', label: 'IP Services', icon: 'verified_user' },
     { id: 'docs', label: 'Legal Docs', icon: 'description' },
-    { id: 'compliance', label: 'Compliance', icon: 'policy' }
+    { id: 'compliance', label: 'Compliance', icon: 'policy' },
+    { id: 'fdi', label: 'FDI & FEMA', icon: 'currency_exchange' }
 ];
 
 const services = [
@@ -57,6 +58,16 @@ const services = [
         linkText: 'Enroll Now',
         icon: 'policy',
         defaultSub: 'Compliance'
+    },
+    {
+        id: 'fema',
+        title: 'FDI & FEMA Advisory',
+        category: 'fdi',
+        description: 'Navigate Cross-border investments and RBI regulations. We handle FCGPR filings, FLA returns, and ECB compliance.',
+        price: 'From ₹25,000',
+        icon: 'currency_exchange',
+        linkText: 'Consult Counsel',
+        defaultSub: 'FDI Advisory'
     }
 ];
 
@@ -256,6 +267,26 @@ const subCategoryData = {
             { q: 'Are these templates?', a: 'No. Every document is bespoke drafted to your specific jurisdictional and commercial needs.' },
         ],
     },
+    'FDI Advisory': {
+        fullName: 'Foreign Direct Investment (FDI) & FEMA',
+        tagline: 'Expert counsel on bringing foreign capital into Indian start-ups.',
+        price: 'From ₹25,000',
+        timeline: 'Case Specific',
+        minDirectors: 'N/A',
+        liability: 'N/A',
+        docs: [
+            { id: 'firc', title: 'FIRC & KYC', category: 'FUNDING', subLabel: 'FOREIGN INWARD REMITTANCE', icon: 'account_balance' },
+            { id: 'valuation', title: 'VALUATION CERTIFICATE', category: 'FISCAL', subLabel: 'MERCHANT BANKER/CA', icon: 'analytics' },
+        ],
+        steps: [
+            { title: 'Capital Structuring', desc: 'Pre-investment advisory on pricing guidelines and sectoral caps.' },
+            { title: 'Inward Remittance', desc: 'Secure FIRC from AD Category-I Bank.' },
+            { title: 'RBI FC-GPR Filing', desc: 'Filing structure returns via FIRMS portal within 30 days.' },
+        ],
+        faqs: [
+            { q: 'What is the penalty for late RBI filing?', a: 'Late submission fees (LSF) compound per day based on remittance size.' },
+        ]
+    }
 };
 
 const ServicesListing = () => {
@@ -278,6 +309,7 @@ const ServicesListing = () => {
         if (activeCategory === 'ip-services') return ['Trademark'].includes(sub);
         if (activeCategory === 'startup') return ['Startup India'].includes(sub);
         if (activeCategory === 'compliance') return ['Compliance'].includes(sub);
+        if (activeCategory === 'fdi') return ['FDI Advisory'].includes(sub);
         if (activeCategory === 'docs') return ['Custom'].includes(sub);
         return false;
     });

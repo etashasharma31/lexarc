@@ -42,7 +42,6 @@ import Status from './pages/public/Status';
 import TemplateDetail from './pages/public/TemplateDetail';
 import LawyerCases from './pages/dashboard/LawyerCases';
 import LawyerCalendar from './pages/dashboard/LawyerCalendar';
-import AdminFirms from './pages/dashboard/AdminFirms';
 import AdminCompliance from './pages/dashboard/AdminCompliance';
 import AdminAnalytics from './pages/dashboard/AdminAnalytics';
 import AdminHealth from './pages/dashboard/AdminHealth';
@@ -57,7 +56,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/404-error-page" element={<ErrorPage404 />} />
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
-          <Route path="/admin-firms" element={<AdminFirms />} />
           <Route path="/admin-compliance" element={<AdminCompliance />} />
           <Route path="/admin-analytics" element={<AdminAnalytics />} />
           <Route path="/admin-health" element={<AdminHealth />} />

@@ -47,11 +47,11 @@ const realTemplates = [
 
 /* ── Placeholder Templates ───────────────────────────────────────────── */
 const placeholderTemplates = [
-    { name: 'Global NDA (Bilateral)', category: 'Corporate', complexity: 'Foundational', id: 'TMP-001', icon: 'description' },
+    { name: 'Indian NDA (Bilateral)', category: 'Corporate', complexity: 'Foundational', id: 'TMP-001', icon: 'description' },
     { name: 'Advisor Board Agreement', category: 'Governance', complexity: 'Intermediate', id: 'TMP-042', icon: 'people' },
     { name: 'Intellectual Property Assignment', category: 'IP', complexity: 'Advanced', id: 'TMP-109', icon: 'copyright' },
-    { name: 'Series Seed Term Sheet', category: 'Investment', complexity: 'Expert', id: 'TMP-201', icon: 'trending_up' },
-    { name: 'Articles of Incorporation', category: 'Corporate', complexity: 'Foundational', id: 'TMP-015', icon: 'apartment' },
+    { name: 'Angel Tax Term Sheet', category: 'Investment', complexity: 'Expert', id: 'TMP-201', icon: 'trending_up' },
+    { name: 'Articles of Association', category: 'Corporate', complexity: 'Foundational', id: 'TMP-015', icon: 'apartment' },
     { name: 'Shareholder Loan Agreement', category: 'Finance', complexity: 'Intermediate', id: 'TMP-088', icon: 'account_balance' },
 ];
 
